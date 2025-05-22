@@ -1,4 +1,4 @@
-baseURL = "ostring.github.io"
+baseURL = "https://ostring.github.io"
 languageCode = "en"
 DefaultContentLanguage = "en"
 title = "Website of OString"
@@ -8,31 +8,36 @@ title = "Website of OString"
 # theme as git submodule
 theme = "anatole"
 
-# 菜单配置
+[params]
+author = "OString"
+description = "Welcome to OString's Website"
+profilePicture = "images/profile.jpg"
+
 [menu]
   [[menu.main]]
     name = "Home"
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "Articles"
-    url = "/posts/"
+    name = "DataCenter"
+    url = "/posts/data_center/"
     weight = 2
+  [[menu.main]]
+    name = "TechNews"
+    url = "/posts/tech_news/"
+    weight = 3
   [[menu.main]]
     name = "About"
     url = "/about/"
-    weight = 3
-
+    weight = 4
 
 summarylength = 10
 enableEmoji = true
 enableRobotsTXT = true
 
-
 [frontmatter]
-  title = ["title", "h1"]  # 优先使用front matter的title，否则用第一个h1标题
-  date = ["date", ":fileModTime"]  # 使用文件修改时间作为日期
-
+  title = ["title", "h1"]  # Use front matter title first, then h1 title
+  date = ["date", ":fileModTime"]  # Use file modification time as date
 
 # Syntax highlighting
 pygmentsUseClasses = true   
