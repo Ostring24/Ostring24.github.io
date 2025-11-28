@@ -6,23 +6,11 @@
     <description>Recent content in Posts on Website of OString</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 28 Nov 2025 13:47:56 +0800</lastBuildDate><atom:link href="https://ostring.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>GPU行业投资分析</title>
-      <link>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</link>
-      <pubDate>Fri, 28 Nov 2025 13:47:51 +0800</pubDate>
-      
-      <guid>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</guid>
-      
-        <description>&lt;h1 id=&#34;gpu行业投资分析&#34;&gt;GPU行业投资分析&lt;/h1&gt;
-&lt;p&gt;Content coming soon&amp;hellip;&lt;/p&gt;</description>
-      
-    </item>
-    
+    <lastBuildDate>Fri, 28 Nov 2025 13:50:20 +0800</lastBuildDate><atom:link href="https://ostring.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>all in one 平台</title>
       <link>https://ostring.github.io/posts/solution/rag/</link>
-      <pubDate>Fri, 28 Nov 2025 13:02:55 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 13:50:20 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/solution/rag/</guid>
       
@@ -153,7 +141,7 @@
     <item>
       <title>cursor 已经成为了LLM 的入口</title>
       <link>https://ostring.github.io/posts/invest/cursor/cursor_analysis/</link>
-      <pubDate>Fri, 28 Nov 2025 13:02:55 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 13:50:20 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/invest/cursor/cursor_analysis/</guid>
       
@@ -167,7 +155,7 @@
     <item>
       <title>NBER最新重磅：当AI不再是工具，而是“经济代理人”，世界将如何重塑？</title>
       <link>https://ostring.github.io/posts/invest/ai_agents/nber_agent_suvery/</link>
-      <pubDate>Fri, 28 Nov 2025 13:02:55 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 13:50:20 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/invest/ai_agents/nber_agent_suvery/</guid>
       
@@ -219,9 +207,20 @@
     </item>
     
     <item>
+      <title>Untitled</title>
+      <link>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</link>
+      <pubDate>Fri, 28 Nov 2025 13:50:20 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/invest/gpu_industry_company/gpu_invest/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
       <title>搜广推的业务模型</title>
       <link>https://ostring.github.io/posts/solution/search_recommendation_adv/</link>
-      <pubDate>Fri, 28 Nov 2025 13:02:55 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 13:50:20 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/solution/search_recommendation_adv/</guid>
       
@@ -293,7 +292,7 @@
     <item>
       <title>边缘端部署</title>
       <link>https://ostring.github.io/posts/edge_computing/edge_deploy_survey/</link>
-      <pubDate>Fri, 28 Nov 2025 13:02:55 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 13:50:20 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/edge_computing/edge_deploy_survey/</guid>
       

@@ -8,21 +8,9 @@
     <language>en</language>
     <lastBuildDate>Fri, 28 Nov 2025 13:02:55 +0800</lastBuildDate><atom:link href="https://ostring.github.io/posts/data_center/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CXL互连协议</title>
-      <link>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</link>
-      <pubDate>Fri, 28 Nov 2025 13:47:56 +0800</pubDate>
-      
-      <guid>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</guid>
-      
-        <description>&lt;h1 id=&#34;cxl互连协议&#34;&gt;CXL互连协议&lt;/h1&gt;
-&lt;p&gt;Content coming soon&amp;hellip;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
       <title>Nvidia Fusion</title>
       <link>https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/</link>
-      <pubDate>Fri, 28 Nov 2025 13:02:55 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 13:50:20 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/</guid>
       
@@ -47,9 +35,20 @@
     </item>
     
     <item>
+      <title>Untitled</title>
+      <link>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</link>
+      <pubDate>Fri, 28 Nov 2025 13:50:20 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
       <title>服务器散热进化史</title>
       <link>https://ostring.github.io/posts/data_center/server_cooling_evolution/server_cooling_evolution/</link>
-      <pubDate>Fri, 28 Nov 2025 13:02:55 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 13:50:20 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/data_center/server_cooling_evolution/server_cooling_evolution/</guid>
       
