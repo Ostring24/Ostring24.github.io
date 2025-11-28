@@ -366,17 +366,17 @@
     
     <script>
       document.addEventListener('DOMContentLoaded', function () {
-        var postTitle = "\"\"";
-      var contentWrapper = document.querySelector('.post-content-wrapper');
-      if (contentWrapper) {
-        var firstH1 = contentWrapper.querySelector('h1');
-        if (firstH1) {
-          var h1Text = firstH1.textContent.trim().toLowerCase();
-          if (h1Text === postTitle) {
-            firstH1.style.display = 'none';
+        var postTitle = "";
+        var contentWrapper = document.querySelector('.post-content-wrapper');
+        if (contentWrapper) {
+          var firstH1 = contentWrapper.querySelector('h1');
+          if (firstH1) {
+            var h1Text = firstH1.textContent.trim().toLowerCase();
+            if (h1Text === postTitle) {
+              firstH1.style.display = 'none';
+            }
           }
         }
-      }
       });
     </script></div>
   <div class="post__footer">
