@@ -8,20 +8,9 @@
     <language>en</language>
     <lastBuildDate>Fri, 30 May 2025 17:16:10 +0800</lastBuildDate><atom:link href="https://ostring.github.io/posts/data_center/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</link>
-      <pubDate>Fri, 28 Nov 2025 12:23:57 +0800</pubDate>
-      
-      <guid>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</guid>
-      
-        <description></description>
-      
-    </item>
-    
-    <item>
-      <title></title>
+      <title>Nvidia Fusion</title>
       <link>https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/</link>
-      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 12:49:48 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/data_center/nvidia_fusion/nvdia_fusion/</guid>
       
@@ -46,13 +35,25 @@
     </item>
     
     <item>
-      <title></title>
+      <title>Untitled</title>
+      <link>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</link>
+      <pubDate>Fri, 28 Nov 2025 12:49:48 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/data_center/interconnnect_protocol/cxl/</guid>
+      
+        <description></description>
+      
+    </item>
+    
+    <item>
+      <title>服务器散热进化史</title>
       <link>https://ostring.github.io/posts/data_center/server_cooling_evolution/server_cooling_evolution/</link>
-      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 12:49:48 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/data_center/server_cooling_evolution/server_cooling_evolution/</guid>
       
-        <description>&lt;h1 id=&#34;服务器散热进化史&#34;&gt;服务器散热进化史&lt;/h1&gt;
+        <description>&lt;p&gt;﻿&lt;/p&gt;
+&lt;h1 id=&#34;服务器散热进化史&#34;&gt;服务器散热进化史&lt;/h1&gt;
 &lt;h3 id=&#34;液冷方案崛起&#34;&gt;液冷方案崛起&lt;/h3&gt;
 &lt;p&gt;最近在关注美股，围观行业大佬分析NV 供应链体系，注意到一家公司VRT， 这家公司是NV 的独家液冷方案提供商。最近VRT 的股价青云直上，一家做液冷方案的公司护城河到底有多深，散热方案在整个行业中处于什么位置，这些问题是我想了解的。&lt;/p&gt;
 &lt;p&gt;NV 的技术路线图从A100/H100 到最新GB200 的体系，TDP 也从300~700W 跃升到1000W 的门槛，以往的风冷方案在散热效率上显得非常力不从心。从2019 年的数据来看，国内IDC 能耗43%用于 IT 设备散热， 基本与 45%的 IT 设备自身能耗持平，这在低碳的大背景下，与IDC 行业追求的PUE 小于1.3 相背离。&lt;/p&gt;

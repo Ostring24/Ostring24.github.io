@@ -1,125 +1,87 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DataCenter on Website of OString</title>
+    <title>Untitled on Website of OString</title>
     <link>https://ostring.github.io/posts/tech_news/</link>
-    <description>Recent content in DataCenter on Website of OString</description>
+    <description>Recent content in Untitled on Website of OString</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 30 May 2025 17:16:10 +0800</lastBuildDate><atom:link href="https://ostring.github.io/posts/tech_news/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 28 Nov 2025 12:49:48 +0800</lastBuildDate><atom:link href="https://ostring.github.io/posts/tech_news/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/tech_news/openai_gpto3pro/gpto3_pro/</link>
-      <pubDate>Fri, 28 Nov 2025 12:23:57 +0800</pubDate>
+      <title>**2025台北国际电脑展：亚洲最大AI科技展的五大看点**</title>
+      <link>https://ostring.github.io/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/</link>
+      <pubDate>Fri, 28 Nov 2025 12:49:48 +0800</pubDate>
       
-      <guid>https://ostring.github.io/posts/tech_news/openai_gpto3pro/gpto3_pro/</guid>
+      <guid>https://ostring.github.io/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/</guid>
       
-        <description>&lt;h1 id=&#34;openai-o3-pro的一些反馈&#34;&gt;OpenAI O3 pro的一些反馈&lt;/h1&gt;
-&lt;p&gt;OpenAI 最近推出了 GPT-3 Pro，这是他们迄今为止最强大的 AI 模型。&lt;/p&gt;
-&lt;p&gt;GPT-3 Pro 是 GPT-3 的一个升级版本。GPT-3 是一个推理模型，在今年早些时候发布。与传统的 AI 模型不同，推理模型能够一步一步地解决问题，这使得它在物理、数学和编程等领域表现更加可靠。
-从本周二开始，GPT-3 Pro 将面向 ChatGPT Pro 和团队用户开放，取代之前的 GPT-1 Pro 模型。企业用户和教育用户将在下周获得访问权限。同时，GPT-3 Pro 也已经可以在 OpenAI 的开发者 API 中使用了。&lt;/p&gt;
-&lt;p&gt;在 API 使用方面，GPT-3 Pro 的定价是：每百万个输入标记收费 20 美元，每百万个输出标记收费 80 美元。输入标记是指输入到模型中的内容，输出标记则是模型根据输入生成的内容。 o3 系列价格下调 80%，当前定价为每百万输入/输出令牌 2/8 美元（此前为 8/40 美元），并为缓存输入令牌提供 75% 的折扣。o3 的每令牌价格与 GPT-4.1 相当，与 Gemini 2.5 Pro 和 Claude 4 Sonnet 价格相近，但比 Claude 4 Opus 便宜 8 倍。&lt;/p&gt;
+        <description>&lt;h1 id=&#34;2025台北国际电脑展亚洲最大ai科技展的五大看点&#34;&gt;&lt;strong&gt;2025台北国际电脑展：亚洲最大AI科技展的五大看点&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;./_page_135_Picture_0.jpeg&#34; alt=&#34;&#34;&gt;
+在世界大部分目光都集中在美国和中国之间的人工智能竞赛之际，本周的台北国际电脑展鲜明地提醒人们，台湾在全球科技产业中继续扮演着核心角色。&lt;/p&gt;
+&lt;p&gt;与去年相比，2025年的亚洲标志性科技盛会并没有取得太多的新突破，当时英伟达公司的黄仁勋公布了AI芯片设计的多年度路线图。但它仍然吸引了业内人士的关注，他们正在分析在DeepSeek事件之后，华盛顿遏制北京科技野心的行动所产生的影响。&lt;/p&gt;
+&lt;p&gt;2025年台北国际电脑展几大看点：&lt;/p&gt;
+&lt;h2 id=&#34;消费级ai还不会很快到来&#34;&gt;&lt;strong&gt;消费级AI还不会很快到来&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;相比于去年，今年很少提及消费级AI。很明显的对比，在2024年，高通公司将其演示文稿的重点放在人工智能将如何让一切变得更好，以及我们将再也不需要在旅途中携带笔记本电脑充电器。然而这一次，它转而专注于人工智能的企业应用。&lt;/p&gt;
+&lt;p&gt;富士康，利用其在展会上的首次主题演讲，大力宣传Heavey industry人工智能，从使城市更智能到将机器人引入制造业，以及提高电动汽车设计的效率。除此之外，这家组装了全球大部分iPhone的公司没有任何能让消费者兴奋的东西。&lt;/p&gt;
+&lt;p&gt;鸿海董事长刘扬伟在主题演讲中。&lt;/p&gt;
+&lt;p&gt;另一家台湾本土PC 制造商，华硕电脑股份有限公司对所谓的AI PC的前景持谨慎态度。&lt;/p&gt;
+&lt;p&gt;这家台湾电脑设备制造商的联合首席执行官Samson Hu表示，AI PC需要&lt;strong&gt;一到两年&lt;/strong&gt;的时间才能成为主流。这是因为软件仍然不成熟，加上美国的新关税可能会抑制近期增长。Hu表示，华硕可能不得不将美国的价格提高高达10%，以应对这些税费。&lt;/p&gt;
+&lt;p&gt;中国本土PC，联想集团有限公司的股票跌幅创一个多月以来之最，此前该公司公布的财报显示，利润下降幅度高达64%，远超预期，反映了AI服务器和PC市场的竞争压力。
+3月份季度净利润为9000万美元，而预期超过2亿美元，尽管销售额以快于预期的速度增长了23%，达到约170亿美元，但其在香港的股价仍下跌了5.4%。&lt;/p&gt;
+&lt;p&gt;一句话，消费级AI硬件还不会很快到来。&lt;/p&gt;
+&lt;h2 id=&#34;deepseek改变了ai改变了各位ceo&#34;&gt;&lt;strong&gt;DeepSeek改变了AI,改变了各位CEO&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;今年1月DeepSeek的亮相改变了AI的性质，突显了中国在该领域的进步，同时打破了对计算需求的基本假设。&lt;/p&gt;
+&lt;p&gt;黄仁勋是少数几个公开谈论这一点的管理者之一，他说中国在软件开发方面“令人难以置信”，并且有资源来弥补任何技术差距。&lt;/p&gt;
+&lt;p&gt;DeepSeek还普及了推理模型，这需要更多的原始计算能力。&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;一百万个输入标记大约相当于 75 万个单词，比《战争与和平》这本书还要长一些。&lt;/p&gt;</description>
+&lt;p&gt;黄仁勋本周告诉记者：“因此，现在的推理模型不是一次性的，而是数百次的。DeepSeek将计算需求增加了可能100到1000倍。”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;中国的影响巨大&#34;&gt;&lt;strong&gt;中国的影响巨大&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;最受关注的头条新闻集中在英伟达的微妙处境上，因为美国正在推行旨在遏制中国科技崛起的芯片限制。这种情况在周三达到了高潮，当时黄仁勋称这种努力是“失败的”，并呼吁华盛顿&lt;a href=&#34;https://www.bloomberg.com/news/articles/2025-05-21/nvidia-ceo-urges-us-to-lower-barriers-to-50-billion-china-arena&#34;&gt;让步&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;他警告说，如果美国不允许英伟达在中国境内销售，H等本土公司将填补这一空白。黄仁勋说：“当地公司非常有才华，也非常坚定。出口管制给予了他们精神、能量和政府支持，以加速他们的发展。”&lt;/p&gt;
+&lt;p&gt;虽然华盛顿的关键官员接受这种适用于世界其他地区的论点，但美国总统唐纳德·特朗普的政府已经[加倍]针对的措施。&lt;/p&gt;
+&lt;p&gt;毫无疑问，台湾的管理者注意到了两个相关的进展。华为也在同一周举办了其AI开发者大会，宣传北京希望取代英伟达芯片的昇腾芯片。小米公司恰好宣布，它已经开发了自己的先进3纳米移动芯片，以与高通竞争。&lt;/p&gt;
+&lt;p&gt;另外，今天xiaomi 发布了3nm 的XRing  移动芯片&lt;/p&gt;
+&lt;h4 id=&#34;台湾魅力攻势&#34;&gt;&lt;strong&gt;台湾魅力攻势&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;在英特尔公司的新老板对其前任Pat Gelsinger提出对台积电在半导体领域的主导地位的担忧之后，他努力修复与台湾合作伙伴的关系。&lt;/p&gt;
+&lt;p&gt;周一，在台北举行的庆祝公司成立40周年的活动中，谭秉忠赞扬了当地的供应链合作伙伴。&lt;/p&gt;
+&lt;p&gt;甚至英伟达也在会议上投入了大量时间和场地来赞扬其台湾合作伙伴。软银集团创始人孙正义也在本周来到台北，但像谭秉忠一样，他一直保持低调。&lt;/p&gt;
+&lt;h4 id=&#34;ai-基建没有泡沫&#34;&gt;&lt;strong&gt;AI 基建没有泡沫&lt;/strong&gt;&lt;/h4&gt;
+&lt;p&gt;对于科技投资者来说，最紧迫的问题之一是：我们是否高估了对数据中心的需求？从英伟达到Meta Platforms公司和微软公司，科技股在2025年出现了剧烈波动，部分原因在于这种总体的不确定性。&lt;/p&gt;
+&lt;p&gt;可以肯定的是，大多数与会者直接受益于为数据中心和AI开发提供动力所需的服务器和组件的支出。英伟达的CEO呼应了这种观点。&lt;/p&gt;
+&lt;p&gt;黄仁勋说：“我们已经投入了数千亿美元，进入了数万亿美元的人工智能基础设施建设中。”&lt;/p&gt;</description>
       
     </item>
     
     <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/tech_news/tesla_robotaxi_launch/</link>
-      <pubDate>Fri, 28 Nov 2025 12:23:57 +0800</pubDate>
+      <title>**快被遗忘的Mistral AI 的最新动向跟踪**</title>
+      <link>https://ostring.github.io/posts/tech_news/mistral_ai/what_is_mistral_ai__zh/</link>
+      <pubDate>Fri, 28 Nov 2025 12:49:48 +0800</pubDate>
       
-      <guid>https://ostring.github.io/posts/tech_news/tesla_robotaxi_launch/</guid>
+      <guid>https://ostring.github.io/posts/tech_news/mistral_ai/what_is_mistral_ai__zh/</guid>
       
-        <description>&lt;h1 id=&#34;tesla-robotaxi上路-实际乘坐体验&#34;&gt;Tesla Robotaxi上路: 实际乘坐体验&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;2025-06-23-08-58-06.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Tesla在2025年6月22日这个星期天，终于在德克萨斯州奥斯汀推出了它长期承诺的Robotaxi服务，这标志着公司进入了一个充满挑战的新时代。服务一开始就非常有限，只对一小部分受邀用户开放，这些人大多是特斯拉的忠实支持者或社交媒体影响者，他们通过一个专门的Tesla应用来召唤车辆。这些早期用户被邀请下载应用，并在奥斯汀的特定地理围栏区域内体验服务，区域覆盖了城市南部和东南部的一小块地方，但不包括机场。服务时间从早上6点到午夜，但如果遇到恶劣天气，比如大雨或强风，车辆可能会暂停运行，以确保安全。&lt;/p&gt;
-&lt;p&gt;车辆使用的是2025款Model Y SUV，外观和普通消费者版本几乎一样，但内部搭载了更先进的软件系统，这是Tesla所谓的“无监督”版Full Self-Driving技术，旨在实现完全自动驾驶。有趣的是，每辆车的前排乘客座位上都坐着一名Tesla员工，作为“安全监控员”，他们不能直接控制方向盘或刹车，但可以在紧急情况下介入或联系远程支持团队。费用是固定的4.20美元，这个数字似乎是Elon Musk对《银河系漫游指南》的致敬，因为书中“42”是生命意义的答案。一些受邀用户在社交媒体上分享了他们的体验视频，显示车辆在停车、避让行人等任务上表现平稳，但也有人报告说，在行驶中车辆突然刹车，可能与路过警车有关，这引发了外界对技术可靠性的疑问。&lt;/p&gt;
-&lt;p&gt;这次推出是Elon Musk近十年承诺的兑现，他早在2016年就暗示Tesla车辆能变成自动驾驶出租车，并在2019年预言2020年会有100万辆上路，但都未能实现。现在，投资者们将Robotaxi视为Tesla的救命稻草，因为公司近期全球销售下滑，部分原因是Musk的政治活动——他支持前总统特朗普和右翼事业，疏远了自由派买家。Tesla的市值高达1万亿美元，很大程度上依赖于Musk的AI和自动驾驶愿景，但分析师们警告说，这次有限推出远未达到预期，也落后于竞争对手。例如，Waymo已经在奥斯汀运营商业服务，与Uber合作，而Zoox、Volkswagen和Avride等公司也在当地测试自动驾驶车辆，它们使用激光雷达和雷达等多传感器系统，而Tesla只依赖摄像头，这被专家批评为在低光条件下可能出问题。&lt;/p&gt;
-&lt;p&gt;服务推出前就面临多重挑战。联邦公路交通安全管理局（NHTSA）正在调查Tesla技术是否在雾、灰尘或强光下容易失效，并已要求公司提供详细运营计划。在德克萨斯州，尽管当地法规对自动驾驶车辆较宽松，但七名民主党州议员曾写信要求推迟推出，以等待新安全法规生效。公众反应也复杂，奥斯汀居民中有人抗议，担心自动驾驶车辆会“接管”城市街道，影响安全；同时，Tesla试图通过封锁公共记录请求来保密细节，比如拒绝向德州交通部披露信息，这增加了透明度担忧。&lt;/p&gt;
-&lt;p&gt;未来，Tesla计划扩大服务，Musk说几个月内车辆数会从初始的10-20辆增加到上千辆，并最终推出名为Cybercab的专用车辆，它没有方向盘或踏板，专为出租车设计。更宏大的愿景是让现有Tesla车主将车辆升级为自动驾驶出租车，在空闲时赚取收入，但分析师质疑这个想法的可行性，因为人们可能不愿分享私人车辆。Tesla还面临内部压力，比如承诺在6月底前推出更实惠的新车型，但原型车尚未亮相，订单也未开放。&lt;/p&gt;
-&lt;p&gt;总的来说，这次Robotaxi推出是Tesla的关键一步，但它暴露了技术、监管和公众信任的短板。如果成功，它可能重塑交通行业；如果失败，则会加剧公司困境，毕竟竞争对手们已在全美多个城市稳步推进类似服务。&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/tech_news/2025_0530_deepseek_newupdate/</link>
-      <pubDate>Tue, 17 Jun 2025 15:13:08 +0800</pubDate>
-      
-      <guid>https://ostring.github.io/posts/tech_news/2025_0530_deepseek_newupdate/</guid>
-      
-        <description>&lt;h1 id=&#34;deepseek-对国产芯片的价值&#34;&gt;DeepSeek 对国产芯片的价值&lt;/h1&gt;
-&lt;p&gt;DeepSeek 又更新了，0528的版本在代码生成和幻觉消除方面有了比较大的提升：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;更新后的 R1 模型在数学、编程与通用逻辑等多个基准测评中取得了当前国内所有模型中首屈一指的优异成绩，并且在整体表现上已接近其他国际顶尖模型，如 o3 与 Gemini-2.5-Pro。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;2025-05-30-15-16-53.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h1 id=&#34;deepseek-带来了什么&#34;&gt;DeepSeek 带来了什么&lt;/h1&gt;
-&lt;h2 id=&#34;模型架构上的确定性带来了软硬件一体化设计的确定性&#34;&gt;模型架构上的确定性，带来了软硬件一体化设计的确定性&lt;/h2&gt;
-&lt;p&gt;在早年间，传统CV/NLP 模型，芯片厂商本着好料用在刀刃上原则，最大化晶体管的利用率，为了支持所谓的主流模型，大多数芯片厂商在初期照着&lt;code&gt;bert&lt;/code&gt; 和 &lt;code&gt;resnet&lt;/code&gt; 规划&lt;code&gt;conv2d&lt;/code&gt;,&lt;code&gt;conv1d&lt;/code&gt; 的卷积算力，以及匹配的带宽，数据流的设计也是偏重于卷积，算力分配上基本也都是以dense 算力为主。再到后来，&lt;code&gt;llama&lt;/code&gt; 系列的开源，Transformer 结构模型慢慢收敛，算力分配上又慢慢向&lt;code&gt;mutmul&lt;/code&gt; 等算子进行建模。&lt;/p&gt;
-&lt;p&gt;除了底层算力配比的层面，在软件架构的层面，以往&lt;code&gt;cv&lt;/code&gt; 类模型和想在&lt;code&gt;llm&lt;/code&gt; 模型相比, 在上层架构上没有太多玩法，基本还是参考TensorRT 的做法，通过图编译的模式，在图层做大面积的fusion，甚至做整图fusion，一招鲜，吃遍天，这类模型通过这种方式基本能打满理论芯片的性能。&lt;/p&gt;
-&lt;p&gt;切到&lt;code&gt;Transformer&lt;/code&gt; 类模型后，其对算力和带宽在&lt;code&gt;prefill&lt;/code&gt; 和&lt;code&gt;decode&lt;/code&gt;阶段的不同偏重，又引申出&lt;code&gt;P-D 分离&lt;/code&gt;等上层框架的适配工作，比如&lt;code&gt;vLLM/SG-lang&lt;/code&gt;等，这些在芯片公司需要有一个独立框架团队类做支撑。&lt;/p&gt;
-&lt;p&gt;DeepSeek 从DeepSeek V3 开始，包括后来的R1初版以及最新的0528 版本，都还是复用一套base架构，这种模型架构上的确
-定性给国产芯片的软硬件一体化指明了优化方向。最近DeepSeek 发表的论文“Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures”[https://arxiv.org/pdf/2505.09343]
-从模型结构探索的角度，给未来芯片设计包括系统设计提供了方向，其中重要的是以下几点：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;发展更精确的低精度计算单元，以支持高效的模型训练和推理。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;实现规模扩展（scale-up）与规模扩张（scale-out）的融合，提升系统的灵活性和可扩展性。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;创新低延迟通信结构，满足大规模模型对高速数据传输的需求。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;关于这几点，论文中DeepSeek 都有自己从模型结构上设计的思考，同时也有具体实践，包括&lt;code&gt;DeepEP&lt;/code&gt; 和&lt;code&gt;MLA&lt;/code&gt; 算子的详细实现。&lt;/p&gt;
-&lt;h2 id=&#34;模型的确定性带来了市场落地的确定性&#34;&gt;模型的确定性，带来了市场落地的确定性&lt;/h2&gt;
-&lt;p&gt;同样是开源模型，为什么&lt;code&gt;llama&lt;/code&gt; 没有做到DeepSeek 这么大的影响，&lt;code&gt;llama&lt;/code&gt; 系列也是开源模型，同时架构也基本完全开放，我想主要有以下几点：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;DeepSeek 不光是开源模型，在开源模型的基础上，释放了大量一线实践的成果，包括上面提到的算子层面，以及系统架构层面，这让广大的上游芯片厂商放心也安心，因为这些都是实实在在可以落地的分析，对比LLaMa，除了模型权重，基本无相关落地的实践guideline，在LLaMa-3 发布后，还有大量翻车的测试结果，也暴露出其对自身模型信心不足；&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;LLaMA（1、2、3）使用的是 Meta 研究许可证（Meta Research License），其商用默认不支持，需要特殊许可，而DeepSeek 商用无限制，是真正的开源模型，这也让下游的众多客户可以放开拳脚；&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/tech_news/apple_intellegence_2025/apple_intellegence/</link>
-      <pubDate>Tue, 17 Jun 2025 15:11:13 +0800</pubDate>
-      
-      <guid>https://ostring.github.io/posts/tech_news/apple_intellegence_2025/apple_intellegence/</guid>
-      
-        <description>&lt;h1 id=&#34;apple-ai-到底怎么样了&#34;&gt;Apple AI 到底怎么样了&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;./_page_13_Picture_0.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;h2 id=&#34;回顾下上次发布会&#34;&gt;回顾下上次发布会&lt;/h2&gt;
-&lt;p&gt;2024年9月的苹果iPhone 16发布会上了解更多信息。苹果在发布会上宣传了即将推向其设备的一系列AI功能，包括Apple Watch Series 10 的翻译功能、iPhone上的视觉搜索，以及对Siri功能的一些改进。第一波苹果智能功能将于10月底推出，作为iOS 18.1、iPadOS 18.1和macOS Sequoia 15.1 的一部分。&lt;/p&gt;
-&lt;p&gt;这些功能首先在美国英语中推出。苹果随后添加了澳大利亚、加拿大、新西兰、南非和英国英语的本地化版本。对中文、印度英语、新加坡英语、法语、德语、意大利语、日语、韩语、葡萄牙语、西班牙语和越南语的支持将于2025年推出。&lt;/p&gt;
-&lt;p&gt;Apple Intelligence的首波功能于2024年10月通过iOS 18.1、iPadOS 18和macOS Sequoia 15.1更新推出。这些更新包含集成写作工具、图像清理、文章摘要以及重新设计的Siri体验的文字输入。第二波功能随iOS 18.2、iPadOS 18.2和macOS Sequoia 15.2更新推出，包括Genmoji、图像乐园、视觉智能、图像魔杖和ChatGPT集成。&lt;/p&gt;
-&lt;p&gt;当时发布会上宣布的，只要您拥有以下设备中的一种，即可免费使用这些功能：&lt;/p&gt;
+        <description>&lt;h1 id=&#34;快被遗忘的mistral-ai-的最新动向跟踪&#34;&gt;&lt;strong&gt;快被遗忘的Mistral AI 的最新动向跟踪&lt;/strong&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;./image.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Mistral AI 自 2023 年创立以来，已筹集了大量资金，其雄心壮志是“将前沿 AI 掌握在每个人手中”。虽然这并非直接针对 OpenAI，但该口号旨在强调该公司对 AI 开放性的倡导。最近Mistral AI 似乎淡出了视野，没有太多动静。&lt;/p&gt;
+&lt;p&gt;最初Mistral AI 出圈是因为其开源并支持MOE模型的创新，最近重新follow 了一下该公司的动向。&lt;/p&gt;
+&lt;p&gt;其 ChatGPT 的替代品，聊天助手 Le Chat，现在也已&lt;a href=&#34;https://techcrunch.com/2025/02/06/mistral-releases-its-ai-assistant-on-ios-and-android/&#34;&gt;在 iOS 和 Android 上提供&lt;/a&gt;。在移动版本发布后的两周内，它达到了 &lt;a href=&#34;https://techcrunch.com/2025/02/19/mistrals-le-chat-tops-1m-downloads-in-just-14-days/&#34;&gt;100 万次下载&lt;/a&gt;，甚至在 iOS App Store 上占据了法国免费下载榜首。&lt;/p&gt;
+&lt;p&gt;除此之外，Mistral AI 还提供了一系列模型，其中包括：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;所有iPhone 16机型&lt;/li&gt;
-&lt;li&gt;iPhone 15 Pro Max (A17 Pro)&lt;/li&gt;
-&lt;li&gt;iPhone 15 Pro (A17 Pro)&lt;/li&gt;
-&lt;li&gt;iPad Pro (M1及后续机型)&lt;/li&gt;
-&lt;li&gt;iPad Air (M1及后续机型)&lt;/li&gt;
-&lt;li&gt;iPad mini (A17及后续机型)&lt;/li&gt;
-&lt;li&gt;MacBook Air (M1及后续机型)&lt;/li&gt;
-&lt;li&gt;MacBook Pro (M1及后续机型)&lt;/li&gt;
-&lt;li&gt;iMac (M1及后续机型)&lt;/li&gt;
-&lt;li&gt;Mac mini (M1及后续机型)&lt;/li&gt;
-&lt;li&gt;Mac Studio (M1 Max及后续机型)&lt;/li&gt;
-&lt;li&gt;Mac Pro (M2 Ultra)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2024/07/24/mistral-releases-large-2-meta-openai-ai-models/&#34;&gt;Mistral Large 2&lt;/a&gt;，主要的语言大模型，取代了 &lt;a href=&#34;https://techcrunch.com/2024/02/26/mistral-ai-releases-new-model-to-rival-gpt-4-and-its-own-chat-assistant/&#34;&gt;Mistral&lt;/a&gt; &lt;a href=&#34;https://techcrunch.com/2024/02/26/mistral-ai-releases-new-model-to-rival-gpt-4-and-its-own-chat-assistant/&#34;&gt;Large&lt;/a&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mistral.ai/en/news/pixtral-large&#34;&gt;Pixtral Large&lt;/a&gt;，&lt;a href=&#34;https://techcrunch.com/2024/11/18/mistral-unveils-new-ai-models-and-chat-features/&#34;&gt;于 2024 年推出&lt;/a&gt;，是 &lt;a href=&#34;https://techcrunch.com/2024/09/11/mistral-releases-pixtral-its-first-multimodal-model/&#34;&gt;Pixtral 系列&lt;/a&gt; &lt;a href=&#34;https://techcrunch.com/2024/09/11/mistral-releases-pixtral-its-first-multimodal-model/&#34;&gt;多模态模型&lt;/a&gt;的新成员。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2025/05/07/mistral-claims-its-newest-ai-model-delivers-leading-performance-for-the-price/&#34;&gt;Mistral Medium 3&lt;/a&gt;，于 2025 年 5 月发布，承诺在不牺牲性能的情况下提供效率，最适合编码和 STEM 任务。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2025/05/21/mistrals-new-devstral-model-was-designed-for-coding/&#34;&gt;Devstral&lt;/a&gt;，一种专为编码设计的 AI 模型，并以 Apache 2.0 许可证公开提供，这意味着可以不受限制地用于商业用途。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2024/05/29/mistral-releases-its-first-generative-ai-model-for-code/&#34;&gt;Codestral&lt;/a&gt;，一种早期的代码生成 AI 模型，但其许可证禁止商业应用。&lt;/li&gt;
+&lt;li&gt;“Les Ministraux”，一系列&lt;a href=&#34;https://techcrunch.com/2024/10/16/mistral-releases-new-ai-models-optimized-for-edge-devices/&#34;&gt;针对手机等边缘设备优化的&lt;/a&gt;模型。&lt;/li&gt;
+&lt;li&gt;Mistral Saba，&lt;a href=&#34;https://techcrunch.com/2025/02/17/mistral-releases-regional-model-focused-on-arabic-language-and-culture/&#34;&gt;专注于阿拉伯语&lt;/a&gt;。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;但是，由于标准版机型的芯片组存在不足，只有iPhone 15 Pro版本才能使用该功能。&lt;/p&gt;</description>
+&lt;p&gt;2025 年 3 月，该公司&lt;a href=&#34;https://techcrunch.com/2025/03/06/mistrals-new-ocr-api-turns-any-pdf-document-into-an-ai-ready-markdown-file/&#34;&gt;推出了 Mistral OCR&lt;/a&gt;，这是一种光学字符识别 (OCR) API，可以将任何 PDF 转换为文本文件，以便 AI 模型更易于提取信息。&lt;/p&gt;</description>
       
     </item>
     
     <item>
-      <title></title>
+      <title>**苹果WWDC 2025 前瞻**</title>
       <link>https://ostring.github.io/posts/tech_news/apple_wwdc2025/16_everything_apple_plans_to_show_at_its_ios_26-focus_zh/</link>
-      <pubDate>Tue, 17 Jun 2025 15:11:13 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 12:49:48 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/tech_news/apple_wwdc2025/16_everything_apple_plans_to_show_at_its_ios_26-focus_zh/</guid>
       
@@ -169,65 +131,9 @@
     </item>
     
     <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/</link>
-      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
-      
-      <guid>https://ostring.github.io/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/</guid>
-      
-        <description>&lt;h1 id=&#34;2025台北国际电脑展亚洲最大ai科技展的五大看点&#34;&gt;&lt;strong&gt;2025台北国际电脑展：亚洲最大AI科技展的五大看点&lt;/strong&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;./_page_135_Picture_0.jpeg&#34; alt=&#34;&#34;&gt;
-在世界大部分目光都集中在美国和中国之间的人工智能竞赛之际，本周的台北国际电脑展鲜明地提醒人们，台湾在全球科技产业中继续扮演着核心角色。&lt;/p&gt;
-&lt;p&gt;与去年相比，2025年的亚洲标志性科技盛会并没有取得太多的新突破，当时英伟达公司的黄仁勋公布了AI芯片设计的多年度路线图。但它仍然吸引了业内人士的关注，他们正在分析在DeepSeek事件之后，华盛顿遏制北京科技野心的行动所产生的影响。&lt;/p&gt;
-&lt;p&gt;2025年台北国际电脑展几大看点：&lt;/p&gt;
-&lt;h2 id=&#34;消费级ai还不会很快到来&#34;&gt;&lt;strong&gt;消费级AI还不会很快到来&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;相比于去年，今年很少提及消费级AI。很明显的对比，在2024年，高通公司将其演示文稿的重点放在人工智能将如何让一切变得更好，以及我们将再也不需要在旅途中携带笔记本电脑充电器。然而这一次，它转而专注于人工智能的企业应用。&lt;/p&gt;
-&lt;p&gt;富士康，利用其在展会上的首次主题演讲，大力宣传Heavey industry人工智能，从使城市更智能到将机器人引入制造业，以及提高电动汽车设计的效率。除此之外，这家组装了全球大部分iPhone的公司没有任何能让消费者兴奋的东西。&lt;/p&gt;
-&lt;p&gt;鸿海董事长刘扬伟在主题演讲中。&lt;/p&gt;
-&lt;p&gt;另一家台湾本土PC 制造商，华硕电脑股份有限公司对所谓的AI PC的前景持谨慎态度。&lt;/p&gt;
-&lt;p&gt;这家台湾电脑设备制造商的联合首席执行官Samson Hu表示，AI PC需要&lt;strong&gt;一到两年&lt;/strong&gt;的时间才能成为主流。这是因为软件仍然不成熟，加上美国的新关税可能会抑制近期增长。Hu表示，华硕可能不得不将美国的价格提高高达10%，以应对这些税费。&lt;/p&gt;
-&lt;p&gt;中国本土PC，联想集团有限公司的股票跌幅创一个多月以来之最，此前该公司公布的财报显示，利润下降幅度高达64%，远超预期，反映了AI服务器和PC市场的竞争压力。
-3月份季度净利润为9000万美元，而预期超过2亿美元，尽管销售额以快于预期的速度增长了23%，达到约170亿美元，但其在香港的股价仍下跌了5.4%。&lt;/p&gt;
-&lt;p&gt;一句话，消费级AI硬件还不会很快到来。&lt;/p&gt;
-&lt;h2 id=&#34;deepseek改变了ai改变了各位ceo&#34;&gt;&lt;strong&gt;DeepSeek改变了AI,改变了各位CEO&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;今年1月DeepSeek的亮相改变了AI的性质，突显了中国在该领域的进步，同时打破了对计算需求的基本假设。&lt;/p&gt;
-&lt;p&gt;黄仁勋是少数几个公开谈论这一点的管理者之一，他说中国在软件开发方面“令人难以置信”，并且有资源来弥补任何技术差距。&lt;/p&gt;
-&lt;p&gt;DeepSeek还普及了推理模型，这需要更多的原始计算能力。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;黄仁勋本周告诉记者：“因此，现在的推理模型不是一次性的，而是数百次的。DeepSeek将计算需求增加了可能100到1000倍。”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h4 id=&#34;中国的影响巨大&#34;&gt;&lt;strong&gt;中国的影响巨大&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;最受关注的头条新闻集中在英伟达的微妙处境上，因为美国正在推行旨在遏制中国科技崛起的芯片限制。这种情况在周三达到了高潮，当时黄仁勋称这种努力是“失败的”，并呼吁华盛顿&lt;a href=&#34;https://www.bloomberg.com/news/articles/2025-05-21/nvidia-ceo-urges-us-to-lower-barriers-to-50-billion-china-arena&#34;&gt;让步&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;他警告说，如果美国不允许英伟达在中国境内销售，H等本土公司将填补这一空白。黄仁勋说：“当地公司非常有才华，也非常坚定。出口管制给予了他们精神、能量和政府支持，以加速他们的发展。”&lt;/p&gt;
-&lt;p&gt;虽然华盛顿的关键官员接受这种适用于世界其他地区的论点，但美国总统唐纳德·特朗普的政府已经[加倍]针对的措施。&lt;/p&gt;
-&lt;p&gt;毫无疑问，台湾的管理者注意到了两个相关的进展。华为也在同一周举办了其AI开发者大会，宣传北京希望取代英伟达芯片的昇腾芯片。小米公司恰好宣布，它已经开发了自己的先进3纳米移动芯片，以与高通竞争。&lt;/p&gt;
-&lt;p&gt;另外，今天xiaomi 发布了3nm 的XRing  移动芯片&lt;/p&gt;
-&lt;h4 id=&#34;台湾魅力攻势&#34;&gt;&lt;strong&gt;台湾魅力攻势&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;在英特尔公司的新老板对其前任Pat Gelsinger提出对台积电在半导体领域的主导地位的担忧之后，他努力修复与台湾合作伙伴的关系。&lt;/p&gt;
-&lt;p&gt;周一，在台北举行的庆祝公司成立40周年的活动中，谭秉忠赞扬了当地的供应链合作伙伴。&lt;/p&gt;
-&lt;p&gt;甚至英伟达也在会议上投入了大量时间和场地来赞扬其台湾合作伙伴。软银集团创始人孙正义也在本周来到台北，但像谭秉忠一样，他一直保持低调。&lt;/p&gt;
-&lt;h4 id=&#34;ai-基建没有泡沫&#34;&gt;&lt;strong&gt;AI 基建没有泡沫&lt;/strong&gt;&lt;/h4&gt;
-&lt;p&gt;对于科技投资者来说，最紧迫的问题之一是：我们是否高估了对数据中心的需求？从英伟达到Meta Platforms公司和微软公司，科技股在2025年出现了剧烈波动，部分原因在于这种总体的不确定性。&lt;/p&gt;
-&lt;p&gt;可以肯定的是，大多数与会者直接受益于为数据中心和AI开发提供动力所需的服务器和组件的支出。英伟达的CEO呼应了这种观点。&lt;/p&gt;
-&lt;p&gt;黄仁勋说：“我们已经投入了数千亿美元，进入了数万亿美元的人工智能基础设施建设中。”&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/tech_news/ai_agent/manus/</link>
-      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
-      
-      <guid>https://ostring.github.io/posts/tech_news/ai_agent/manus/</guid>
-      
-        <description>&lt;p&gt;&lt;img src=&#34;2025-05-25-21-04-45.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title></title>
+      <title>AI 幻觉</title>
       <link>https://ostring.github.io/posts/tech_news/ai_illumination/a_illumination/</link>
-      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 12:49:48 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/tech_news/ai_illumination/a_illumination/</guid>
       
@@ -254,9 +160,9 @@
     </item>
     
     <item>
-      <title></title>
+      <title>AMD 收购硅光子初创公司</title>
       <link>https://ostring.github.io/posts/tech_news/amd_buy_silicon_photonic_startup/</link>
-      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 12:49:48 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/tech_news/amd_buy_silicon_photonic_startup/</guid>
       
@@ -276,9 +182,83 @@
     </item>
     
     <item>
-      <title></title>
+      <title>Apple AI 到底怎么样了</title>
+      <link>https://ostring.github.io/posts/tech_news/apple_intellegence_2025/apple_intellegence/</link>
+      <pubDate>Fri, 28 Nov 2025 12:49:48 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/tech_news/apple_intellegence_2025/apple_intellegence/</guid>
+      
+        <description>&lt;h1 id=&#34;apple-ai-到底怎么样了&#34;&gt;Apple AI 到底怎么样了&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;./_page_13_Picture_0.jpeg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;回顾下上次发布会&#34;&gt;回顾下上次发布会&lt;/h2&gt;
+&lt;p&gt;2024年9月的苹果iPhone 16发布会上了解更多信息。苹果在发布会上宣传了即将推向其设备的一系列AI功能，包括Apple Watch Series 10 的翻译功能、iPhone上的视觉搜索，以及对Siri功能的一些改进。第一波苹果智能功能将于10月底推出，作为iOS 18.1、iPadOS 18.1和macOS Sequoia 15.1 的一部分。&lt;/p&gt;
+&lt;p&gt;这些功能首先在美国英语中推出。苹果随后添加了澳大利亚、加拿大、新西兰、南非和英国英语的本地化版本。对中文、印度英语、新加坡英语、法语、德语、意大利语、日语、韩语、葡萄牙语、西班牙语和越南语的支持将于2025年推出。&lt;/p&gt;
+&lt;p&gt;Apple Intelligence的首波功能于2024年10月通过iOS 18.1、iPadOS 18和macOS Sequoia 15.1更新推出。这些更新包含集成写作工具、图像清理、文章摘要以及重新设计的Siri体验的文字输入。第二波功能随iOS 18.2、iPadOS 18.2和macOS Sequoia 15.2更新推出，包括Genmoji、图像乐园、视觉智能、图像魔杖和ChatGPT集成。&lt;/p&gt;
+&lt;p&gt;当时发布会上宣布的，只要您拥有以下设备中的一种，即可免费使用这些功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;所有iPhone 16机型&lt;/li&gt;
+&lt;li&gt;iPhone 15 Pro Max (A17 Pro)&lt;/li&gt;
+&lt;li&gt;iPhone 15 Pro (A17 Pro)&lt;/li&gt;
+&lt;li&gt;iPad Pro (M1及后续机型)&lt;/li&gt;
+&lt;li&gt;iPad Air (M1及后续机型)&lt;/li&gt;
+&lt;li&gt;iPad mini (A17及后续机型)&lt;/li&gt;
+&lt;li&gt;MacBook Air (M1及后续机型)&lt;/li&gt;
+&lt;li&gt;MacBook Pro (M1及后续机型)&lt;/li&gt;
+&lt;li&gt;iMac (M1及后续机型)&lt;/li&gt;
+&lt;li&gt;Mac mini (M1及后续机型)&lt;/li&gt;
+&lt;li&gt;Mac Studio (M1 Max及后续机型)&lt;/li&gt;
+&lt;li&gt;Mac Pro (M2 Ultra)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;但是，由于标准版机型的芯片组存在不足，只有iPhone 15 Pro版本才能使用该功能。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>DeepSeek 对国产芯片的价值</title>
+      <link>https://ostring.github.io/posts/tech_news/2025_0530_deepseek_newupdate/</link>
+      <pubDate>Fri, 28 Nov 2025 12:49:48 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/tech_news/2025_0530_deepseek_newupdate/</guid>
+      
+        <description>&lt;h1 id=&#34;deepseek-对国产芯片的价值&#34;&gt;DeepSeek 对国产芯片的价值&lt;/h1&gt;
+&lt;p&gt;DeepSeek 又更新了，0528的版本在代码生成和幻觉消除方面有了比较大的提升：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;更新后的 R1 模型在数学、编程与通用逻辑等多个基准测评中取得了当前国内所有模型中首屈一指的优异成绩，并且在整体表现上已接近其他国际顶尖模型，如 o3 与 Gemini-2.5-Pro。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;2025-05-30-15-16-53.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;deepseek-带来了什么&#34;&gt;DeepSeek 带来了什么&lt;/h1&gt;
+&lt;h2 id=&#34;模型架构上的确定性带来了软硬件一体化设计的确定性&#34;&gt;模型架构上的确定性，带来了软硬件一体化设计的确定性&lt;/h2&gt;
+&lt;p&gt;在早年间，传统CV/NLP 模型，芯片厂商本着好料用在刀刃上原则，最大化晶体管的利用率，为了支持所谓的主流模型，大多数芯片厂商在初期照着&lt;code&gt;bert&lt;/code&gt; 和 &lt;code&gt;resnet&lt;/code&gt; 规划&lt;code&gt;conv2d&lt;/code&gt;,&lt;code&gt;conv1d&lt;/code&gt; 的卷积算力，以及匹配的带宽，数据流的设计也是偏重于卷积，算力分配上基本也都是以dense 算力为主。再到后来，&lt;code&gt;llama&lt;/code&gt; 系列的开源，Transformer 结构模型慢慢收敛，算力分配上又慢慢向&lt;code&gt;mutmul&lt;/code&gt; 等算子进行建模。&lt;/p&gt;
+&lt;p&gt;除了底层算力配比的层面，在软件架构的层面，以往&lt;code&gt;cv&lt;/code&gt; 类模型和想在&lt;code&gt;llm&lt;/code&gt; 模型相比, 在上层架构上没有太多玩法，基本还是参考TensorRT 的做法，通过图编译的模式，在图层做大面积的fusion，甚至做整图fusion，一招鲜，吃遍天，这类模型通过这种方式基本能打满理论芯片的性能。&lt;/p&gt;
+&lt;p&gt;切到&lt;code&gt;Transformer&lt;/code&gt; 类模型后，其对算力和带宽在&lt;code&gt;prefill&lt;/code&gt; 和&lt;code&gt;decode&lt;/code&gt;阶段的不同偏重，又引申出&lt;code&gt;P-D 分离&lt;/code&gt;等上层框架的适配工作，比如&lt;code&gt;vLLM/SG-lang&lt;/code&gt;等，这些在芯片公司需要有一个独立框架团队类做支撑。&lt;/p&gt;
+&lt;p&gt;DeepSeek 从DeepSeek V3 开始，包括后来的R1初版以及最新的0528 版本，都还是复用一套base架构，这种模型架构上的确
+定性给国产芯片的软硬件一体化指明了优化方向。最近DeepSeek 发表的论文“Insights into DeepSeek-V3: Scaling Challenges and Reflections on Hardware for AI Architectures”[https://arxiv.org/pdf/2505.09343]
+从模型结构探索的角度，给未来芯片设计包括系统设计提供了方向，其中重要的是以下几点：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;发展更精确的低精度计算单元，以支持高效的模型训练和推理。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;实现规模扩展（scale-up）与规模扩张（scale-out）的融合，提升系统的灵活性和可扩展性。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;创新低延迟通信结构，满足大规模模型对高速数据传输的需求。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;关于这几点，论文中DeepSeek 都有自己从模型结构上设计的思考，同时也有具体实践，包括&lt;code&gt;DeepEP&lt;/code&gt; 和&lt;code&gt;MLA&lt;/code&gt; 算子的详细实现。&lt;/p&gt;
+&lt;h2 id=&#34;模型的确定性带来了市场落地的确定性&#34;&gt;模型的确定性，带来了市场落地的确定性&lt;/h2&gt;
+&lt;p&gt;同样是开源模型，为什么&lt;code&gt;llama&lt;/code&gt; 没有做到DeepSeek 这么大的影响，&lt;code&gt;llama&lt;/code&gt; 系列也是开源模型，同时架构也基本完全开放，我想主要有以下几点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;DeepSeek 不光是开源模型，在开源模型的基础上，释放了大量一线实践的成果，包括上面提到的算子层面，以及系统架构层面，这让广大的上游芯片厂商放心也安心，因为这些都是实实在在可以落地的分析，对比LLaMa，除了模型权重，基本无相关落地的实践guideline，在LLaMa-3 发布后，还有大量翻车的测试结果，也暴露出其对自身模型信心不足；&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;LLaMA（1、2、3）使用的是 Meta 研究许可证（Meta Research License），其商用默认不支持，需要特殊许可，而DeepSeek 商用无限制，是真正的开源模型，这也让下游的众多客户可以放开拳脚；&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Google Deepmind CEO 最新采访：AGI 正在来临</title>
       <link>https://ostring.github.io/posts/tech_news/google_deepmind_hassabis/3_the_man_who_a_g_i_-pilled_google_zh/</link>
-      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
+      <pubDate>Fri, 28 Nov 2025 12:49:48 +0800</pubDate>
       
       <guid>https://ostring.github.io/posts/tech_news/google_deepmind_hassabis/3_the_man_who_a_g_i_-pilled_google_zh/</guid>
       
@@ -300,28 +280,48 @@
     </item>
     
     <item>
-      <title></title>
-      <link>https://ostring.github.io/posts/tech_news/mistral_ai/what_is_mistral_ai__zh/</link>
-      <pubDate>Fri, 30 May 2025 17:16:10 +0800</pubDate>
+      <title>OpenAI O3 pro的一些反馈</title>
+      <link>https://ostring.github.io/posts/tech_news/openai_gpto3pro/gpto3_pro/</link>
+      <pubDate>Fri, 28 Nov 2025 12:49:48 +0800</pubDate>
       
-      <guid>https://ostring.github.io/posts/tech_news/mistral_ai/what_is_mistral_ai__zh/</guid>
+      <guid>https://ostring.github.io/posts/tech_news/openai_gpto3pro/gpto3_pro/</guid>
       
-        <description>&lt;h1 id=&#34;快被遗忘的mistral-ai-的最新动向跟踪&#34;&gt;&lt;strong&gt;快被遗忘的Mistral AI 的最新动向跟踪&lt;/strong&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;img src=&#34;./image.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
-&lt;p&gt;Mistral AI 自 2023 年创立以来，已筹集了大量资金，其雄心壮志是“将前沿 AI 掌握在每个人手中”。虽然这并非直接针对 OpenAI，但该口号旨在强调该公司对 AI 开放性的倡导。最近Mistral AI 似乎淡出了视野，没有太多动静。&lt;/p&gt;
-&lt;p&gt;最初Mistral AI 出圈是因为其开源并支持MOE模型的创新，最近重新follow 了一下该公司的动向。&lt;/p&gt;
-&lt;p&gt;其 ChatGPT 的替代品，聊天助手 Le Chat，现在也已&lt;a href=&#34;https://techcrunch.com/2025/02/06/mistral-releases-its-ai-assistant-on-ios-and-android/&#34;&gt;在 iOS 和 Android 上提供&lt;/a&gt;。在移动版本发布后的两周内，它达到了 &lt;a href=&#34;https://techcrunch.com/2025/02/19/mistrals-le-chat-tops-1m-downloads-in-just-14-days/&#34;&gt;100 万次下载&lt;/a&gt;，甚至在 iOS App Store 上占据了法国免费下载榜首。&lt;/p&gt;
-&lt;p&gt;除此之外，Mistral AI 还提供了一系列模型，其中包括：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2024/07/24/mistral-releases-large-2-meta-openai-ai-models/&#34;&gt;Mistral Large 2&lt;/a&gt;，主要的语言大模型，取代了 &lt;a href=&#34;https://techcrunch.com/2024/02/26/mistral-ai-releases-new-model-to-rival-gpt-4-and-its-own-chat-assistant/&#34;&gt;Mistral&lt;/a&gt; &lt;a href=&#34;https://techcrunch.com/2024/02/26/mistral-ai-releases-new-model-to-rival-gpt-4-and-its-own-chat-assistant/&#34;&gt;Large&lt;/a&gt;。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://mistral.ai/en/news/pixtral-large&#34;&gt;Pixtral Large&lt;/a&gt;，&lt;a href=&#34;https://techcrunch.com/2024/11/18/mistral-unveils-new-ai-models-and-chat-features/&#34;&gt;于 2024 年推出&lt;/a&gt;，是 &lt;a href=&#34;https://techcrunch.com/2024/09/11/mistral-releases-pixtral-its-first-multimodal-model/&#34;&gt;Pixtral 系列&lt;/a&gt; &lt;a href=&#34;https://techcrunch.com/2024/09/11/mistral-releases-pixtral-its-first-multimodal-model/&#34;&gt;多模态模型&lt;/a&gt;的新成员。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2025/05/07/mistral-claims-its-newest-ai-model-delivers-leading-performance-for-the-price/&#34;&gt;Mistral Medium 3&lt;/a&gt;，于 2025 年 5 月发布，承诺在不牺牲性能的情况下提供效率，最适合编码和 STEM 任务。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2025/05/21/mistrals-new-devstral-model-was-designed-for-coding/&#34;&gt;Devstral&lt;/a&gt;，一种专为编码设计的 AI 模型，并以 Apache 2.0 许可证公开提供，这意味着可以不受限制地用于商业用途。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://techcrunch.com/2024/05/29/mistral-releases-its-first-generative-ai-model-for-code/&#34;&gt;Codestral&lt;/a&gt;，一种早期的代码生成 AI 模型，但其许可证禁止商业应用。&lt;/li&gt;
-&lt;li&gt;“Les Ministraux”，一系列&lt;a href=&#34;https://techcrunch.com/2024/10/16/mistral-releases-new-ai-models-optimized-for-edge-devices/&#34;&gt;针对手机等边缘设备优化的&lt;/a&gt;模型。&lt;/li&gt;
-&lt;li&gt;Mistral Saba，&lt;a href=&#34;https://techcrunch.com/2025/02/17/mistral-releases-regional-model-focused-on-arabic-language-and-culture/&#34;&gt;专注于阿拉伯语&lt;/a&gt;。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;2025 年 3 月，该公司&lt;a href=&#34;https://techcrunch.com/2025/03/06/mistrals-new-ocr-api-turns-any-pdf-document-into-an-ai-ready-markdown-file/&#34;&gt;推出了 Mistral OCR&lt;/a&gt;，这是一种光学字符识别 (OCR) API，可以将任何 PDF 转换为文本文件，以便 AI 模型更易于提取信息。&lt;/p&gt;</description>
+        <description>&lt;h1 id=&#34;openai-o3-pro的一些反馈&#34;&gt;OpenAI O3 pro的一些反馈&lt;/h1&gt;
+&lt;p&gt;OpenAI 最近推出了 GPT-3 Pro，这是他们迄今为止最强大的 AI 模型。&lt;/p&gt;
+&lt;p&gt;GPT-3 Pro 是 GPT-3 的一个升级版本。GPT-3 是一个推理模型，在今年早些时候发布。与传统的 AI 模型不同，推理模型能够一步一步地解决问题，这使得它在物理、数学和编程等领域表现更加可靠。
+从本周二开始，GPT-3 Pro 将面向 ChatGPT Pro 和团队用户开放，取代之前的 GPT-1 Pro 模型。企业用户和教育用户将在下周获得访问权限。同时，GPT-3 Pro 也已经可以在 OpenAI 的开发者 API 中使用了。&lt;/p&gt;
+&lt;p&gt;在 API 使用方面，GPT-3 Pro 的定价是：每百万个输入标记收费 20 美元，每百万个输出标记收费 80 美元。输入标记是指输入到模型中的内容，输出标记则是模型根据输入生成的内容。 o3 系列价格下调 80%，当前定价为每百万输入/输出令牌 2/8 美元（此前为 8/40 美元），并为缓存输入令牌提供 75% 的折扣。o3 的每令牌价格与 GPT-4.1 相当，与 Gemini 2.5 Pro 和 Claude 4 Sonnet 价格相近，但比 Claude 4 Opus 便宜 8 倍。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一百万个输入标记大约相当于 75 万个单词，比《战争与和平》这本书还要长一些。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Tesla Robotaxi上路: 实际乘坐体验</title>
+      <link>https://ostring.github.io/posts/tech_news/tesla_robotaxi_launch/</link>
+      <pubDate>Fri, 28 Nov 2025 12:49:48 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/tech_news/tesla_robotaxi_launch/</guid>
+      
+        <description>&lt;h1 id=&#34;tesla-robotaxi上路-实际乘坐体验&#34;&gt;Tesla Robotaxi上路: 实际乘坐体验&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&#34;2025-06-23-08-58-06.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Tesla在2025年6月22日这个星期天，终于在德克萨斯州奥斯汀推出了它长期承诺的Robotaxi服务，这标志着公司进入了一个充满挑战的新时代。服务一开始就非常有限，只对一小部分受邀用户开放，这些人大多是特斯拉的忠实支持者或社交媒体影响者，他们通过一个专门的Tesla应用来召唤车辆。这些早期用户被邀请下载应用，并在奥斯汀的特定地理围栏区域内体验服务，区域覆盖了城市南部和东南部的一小块地方，但不包括机场。服务时间从早上6点到午夜，但如果遇到恶劣天气，比如大雨或强风，车辆可能会暂停运行，以确保安全。&lt;/p&gt;
+&lt;p&gt;车辆使用的是2025款Model Y SUV，外观和普通消费者版本几乎一样，但内部搭载了更先进的软件系统，这是Tesla所谓的“无监督”版Full Self-Driving技术，旨在实现完全自动驾驶。有趣的是，每辆车的前排乘客座位上都坐着一名Tesla员工，作为“安全监控员”，他们不能直接控制方向盘或刹车，但可以在紧急情况下介入或联系远程支持团队。费用是固定的4.20美元，这个数字似乎是Elon Musk对《银河系漫游指南》的致敬，因为书中“42”是生命意义的答案。一些受邀用户在社交媒体上分享了他们的体验视频，显示车辆在停车、避让行人等任务上表现平稳，但也有人报告说，在行驶中车辆突然刹车，可能与路过警车有关，这引发了外界对技术可靠性的疑问。&lt;/p&gt;
+&lt;p&gt;这次推出是Elon Musk近十年承诺的兑现，他早在2016年就暗示Tesla车辆能变成自动驾驶出租车，并在2019年预言2020年会有100万辆上路，但都未能实现。现在，投资者们将Robotaxi视为Tesla的救命稻草，因为公司近期全球销售下滑，部分原因是Musk的政治活动——他支持前总统特朗普和右翼事业，疏远了自由派买家。Tesla的市值高达1万亿美元，很大程度上依赖于Musk的AI和自动驾驶愿景，但分析师们警告说，这次有限推出远未达到预期，也落后于竞争对手。例如，Waymo已经在奥斯汀运营商业服务，与Uber合作，而Zoox、Volkswagen和Avride等公司也在当地测试自动驾驶车辆，它们使用激光雷达和雷达等多传感器系统，而Tesla只依赖摄像头，这被专家批评为在低光条件下可能出问题。&lt;/p&gt;
+&lt;p&gt;服务推出前就面临多重挑战。联邦公路交通安全管理局（NHTSA）正在调查Tesla技术是否在雾、灰尘或强光下容易失效，并已要求公司提供详细运营计划。在德克萨斯州，尽管当地法规对自动驾驶车辆较宽松，但七名民主党州议员曾写信要求推迟推出，以等待新安全法规生效。公众反应也复杂，奥斯汀居民中有人抗议，担心自动驾驶车辆会“接管”城市街道，影响安全；同时，Tesla试图通过封锁公共记录请求来保密细节，比如拒绝向德州交通部披露信息，这增加了透明度担忧。&lt;/p&gt;
+&lt;p&gt;未来，Tesla计划扩大服务，Musk说几个月内车辆数会从初始的10-20辆增加到上千辆，并最终推出名为Cybercab的专用车辆，它没有方向盘或踏板，专为出租车设计。更宏大的愿景是让现有Tesla车主将车辆升级为自动驾驶出租车，在空闲时赚取收入，但分析师质疑这个想法的可行性，因为人们可能不愿分享私人车辆。Tesla还面临内部压力，比如承诺在6月底前推出更实惠的新车型，但原型车尚未亮相，订单也未开放。&lt;/p&gt;
+&lt;p&gt;总的来说，这次Robotaxi推出是Tesla的关键一步，但它暴露了技术、监管和公众信任的短板。如果成功，它可能重塑交通行业；如果失败，则会加剧公司困境，毕竟竞争对手们已在全美多个城市稳步推进类似服务。&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Untitled</title>
+      <link>https://ostring.github.io/posts/tech_news/ai_agent/manus/</link>
+      <pubDate>Fri, 28 Nov 2025 12:49:48 +0800</pubDate>
+      
+      <guid>https://ostring.github.io/posts/tech_news/ai_agent/manus/</guid>
+      
+        <description>&lt;p&gt;&lt;img src=&#34;2025-05-25-21-04-45.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
       
     </item>
     
