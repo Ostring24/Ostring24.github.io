@@ -152,8 +152,8 @@ dense layer 结构简单，具体表现为operator 种类少，代表模型： e
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-11-28T12:49:48+08:00">
-    <meta property="article:modified_time" content="2025-11-28T12:49:48+08:00">
+    <meta property="article:published_time" content="2025-11-28T13:02:55+08:00">
+    <meta property="article:modified_time" content="2025-11-28T13:02:55+08:00">
 
 
 
@@ -202,9 +202,9 @@ dense layer 结构简单，具体表现为operator 种类少，代表模型： e
             "@type": "Person",
             "name": "OString"
         },
-        "dateCreated": "2025-11-28T12:49:48.00Z",
-        "datePublished": "2025-11-28T12:49:48.00Z",
-        "dateModified": "2025-11-28T12:49:48.00Z",
+        "dateCreated": "2025-11-28T13:02:55.00Z",
+        "datePublished": "2025-11-28T13:02:55.00Z",
+        "dateModified": "2025-11-28T13:02:55.00Z",
         "publisher":{
             "@type":"Organization",
             "name": "OString",
@@ -375,16 +375,15 @@ dense layer 结构简单，具体表现为operator 种类少，代表模型： e
   </nav>
 </div>
 </header>
-  <div
-    class="post 
+<div class="post 
       animated fadeInDown
-    "
-  >
+    ">
+  
+  <div class="post__content">
     
-    <div class="post__content">
-      
-        <h1>搜广推的业务模型</h1>
-      
+    <h1>搜广推的业务模型</h1>
+    
+    <div class="post-content-wrapper">
       <p>微信公众号 Ostring24</p>
 <p>纵观现在大语言模型和传统AI的落地前景，其实目前还是主要以license 账号的方式来收费，这种方式有一个可见天花板：用户数量。今天早上看到微软Copilot 新签了一个100万licence 的企业大客户，大家都猜测只可能是少数几家大互联网公司，比如亚马逊，以license 收费，要做到边际成本降低很难，同时扩张效应也较弱。</p>
 <p>但今天要聊的是传统互联网（互联网已经可以叫传统行业了，sign&hellip;）营收主力：搜广推，搜广推业务从搜索时代，到信息流，到电商，其实一直在做演进，其依赖的主力模型也从传统的CV/NLP 到目前的大语言模型和MMOE 等多专家模型，其目前仍然是AI 这项技术盈利的主要途径，而且是营收大户。</p>
@@ -763,15 +762,33 @@ kernel fusion improves the overall performance of embedding computations by up t
 <li>System Design for Recommendations and Search:https://eugeneyan.com/writing/system-design-for-discovery/</li>
 <li><a href="https://cloud.tencent.com/developer/article/2039705">https://cloud.tencent.com/developer/article/2039705</a></li>
 </ul>
-</div>
-    <div class="post__footer">
-      
 
-      
     </div>
 
     
+    <script>
+      (function () {
+        var postTitle = "\"搜广推的业务模型\"";
+      var contentWrapper = document.querySelector('.post-content-wrapper');
+      if (contentWrapper) {
+        var firstH1 = contentWrapper.querySelector('h1');
+        if (firstH1) {
+          var h1Text = firstH1.textContent.trim().toLowerCase();
+          if (h1Text === postTitle) {
+            firstH1.style.display = 'none';
+          }
+        }
+      }
+        }) ();
+    </script></div>
+  <div class="post__footer">
+    
+
+    
   </div>
+
+  
+</div>
 
       </main>
     </div><footer class="footer footer__base">

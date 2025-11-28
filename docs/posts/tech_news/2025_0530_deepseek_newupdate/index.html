@@ -154,8 +154,8 @@ LLaMA（1、2、3）使用的是 Meta 研究许可证（Meta Research License）
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-11-28T12:49:48+08:00">
-    <meta property="article:modified_time" content="2025-11-28T12:49:48+08:00">
+    <meta property="article:published_time" content="2025-11-28T13:02:55+08:00">
+    <meta property="article:modified_time" content="2025-11-28T13:02:55+08:00">
 
 
 
@@ -204,9 +204,9 @@ LLaMA（1、2、3）使用的是 Meta 研究许可证（Meta Research License）
             "@type": "Person",
             "name": "OString"
         },
-        "dateCreated": "2025-11-28T12:49:48.00Z",
-        "datePublished": "2025-11-28T12:49:48.00Z",
-        "dateModified": "2025-11-28T12:49:48.00Z",
+        "dateCreated": "2025-11-28T13:02:55.00Z",
+        "datePublished": "2025-11-28T13:02:55.00Z",
+        "dateModified": "2025-11-28T13:02:55.00Z",
         "publisher":{
             "@type":"Organization",
             "name": "OString",
@@ -377,16 +377,15 @@ LLaMA（1、2、3）使用的是 Meta 研究许可证（Meta Research License）
   </nav>
 </div>
 </header>
-  <div
-    class="post 
+<div class="post 
       animated fadeInDown
-    "
-  >
+    ">
+  
+  <div class="post__content">
     
-    <div class="post__content">
-      
-        <h1>DeepSeek 对国产芯片的价值</h1>
-      
+    <h1>DeepSeek 对国产芯片的价值</h1>
+    
+    <div class="post-content-wrapper">
       <h1 id="deepseek-对国产芯片的价值">DeepSeek 对国产芯片的价值</h1>
 <p>DeepSeek 又更新了，0528的版本在代码生成和幻觉消除方面有了比较大的提升：</p>
 <blockquote>
@@ -498,15 +497,33 @@ LLaMA（1、2、3）使用的是 Meta 研究许可证（Meta Research License）
 </ol>
 <p>如果按照这个趋势，模型大厂通过软硬件一体优化的思维，提炼用户需求，传导到上游的国产芯片厂商，最终形成创新的闭环，完全可以打造一个高效的DeepSeek machine（DeepSeek Asic+ DeepSeek System），结合这两天Jenson Huang 对Cloud-Matrix 的评价, 我对这一点愈发有信心。</p>
 <p>后面打算写一篇国产芯片对接DeepSeek 所需要做的工作，正在整理中。</p>
-</div>
-    <div class="post__footer">
-      
 
-      
     </div>
 
     
+    <script>
+      (function () {
+        var postTitle = "\"deepseek 对国产芯片的价值\"";
+      var contentWrapper = document.querySelector('.post-content-wrapper');
+      if (contentWrapper) {
+        var firstH1 = contentWrapper.querySelector('h1');
+        if (firstH1) {
+          var h1Text = firstH1.textContent.trim().toLowerCase();
+          if (h1Text === postTitle) {
+            firstH1.style.display = 'none';
+          }
+        }
+      }
+        }) ();
+    </script></div>
+  <div class="post__footer">
+    
+
+    
   </div>
+
+  
+</div>
 
       </main>
     </div><footer class="footer footer__base">

@@ -146,8 +146,8 @@ NV 的技术路线图从A100/H100 到最新GB200 的体系，TDP 也从300~700W 
   <meta property="og:locale" content="en">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-11-28T12:49:48+08:00">
-    <meta property="article:modified_time" content="2025-11-28T12:49:48+08:00">
+    <meta property="article:published_time" content="2025-11-28T13:02:55+08:00">
+    <meta property="article:modified_time" content="2025-11-28T13:02:55+08:00">
 
 
 
@@ -196,9 +196,9 @@ NV 的技术路线图从A100/H100 到最新GB200 的体系，TDP 也从300~700W 
             "@type": "Person",
             "name": "OString"
         },
-        "dateCreated": "2025-11-28T12:49:48.00Z",
-        "datePublished": "2025-11-28T12:49:48.00Z",
-        "dateModified": "2025-11-28T12:49:48.00Z",
+        "dateCreated": "2025-11-28T13:02:55.00Z",
+        "datePublished": "2025-11-28T13:02:55.00Z",
+        "dateModified": "2025-11-28T13:02:55.00Z",
         "publisher":{
             "@type":"Organization",
             "name": "OString",
@@ -369,16 +369,15 @@ NV 的技术路线图从A100/H100 到最新GB200 的体系，TDP 也从300~700W 
   </nav>
 </div>
 </header>
-  <div
-    class="post 
+<div class="post 
       animated fadeInDown
-    "
-  >
+    ">
+  
+  <div class="post__content">
     
-    <div class="post__content">
-      
-        <h1>服务器散热进化史</h1>
-      
+    <h1>服务器散热进化史</h1>
+    
+    <div class="post-content-wrapper">
       <p>﻿</p>
 <h1 id="服务器散热进化史">服务器散热进化史</h1>
 <h3 id="液冷方案崛起">液冷方案崛起</h3>
@@ -484,15 +483,33 @@ NV 的技术路线图从A100/H100 到最新GB200 的体系，TDP 也从300~700W 
 <li><a href="https://zhuanlan.zhihu.com/p/661617328">https://zhuanlan.zhihu.com/p/661617328</a></li>
 <li><a href="https://xueqiu.com/3966435964/281902854">https://xueqiu.com/3966435964/281902854</a></li>
 </ul>
-</div>
-    <div class="post__footer">
-      
 
-      
     </div>
 
     
+    <script>
+      (function () {
+        var postTitle = "\"服务器散热进化史\"";
+      var contentWrapper = document.querySelector('.post-content-wrapper');
+      if (contentWrapper) {
+        var firstH1 = contentWrapper.querySelector('h1');
+        if (firstH1) {
+          var h1Text = firstH1.textContent.trim().toLowerCase();
+          if (h1Text === postTitle) {
+            firstH1.style.display = 'none';
+          }
+        }
+      }
+        }) ();
+    </script></div>
+  <div class="post__footer">
+    
+
+    
   </div>
+
+  
+</div>
 
       </main>
     </div><footer class="footer footer__base">

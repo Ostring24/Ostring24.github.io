@@ -13,6 +13,7 @@ theme = "anatole"
 author = "OString"
 description = "Welcome to OString's Website"
 profilePicture = "images/profile.jpg"
+fullPostContent = false
 
 [menu]
   [[menu.main]]
