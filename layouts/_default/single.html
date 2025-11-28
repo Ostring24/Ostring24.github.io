@@ -55,7 +55,7 @@
 
     {{/* Hide first H1 in content if it matches the title */}}
     <script>
-      (function () {
+      document.addEventListener('DOMContentLoaded', function () {
         var postTitle = {{ .Title | lower | jsonify
       }};
       var contentWrapper = document.querySelector('.post-content-wrapper');
@@ -68,7 +68,7 @@
           }
         }
       }
-        }) ();
+      });
     </script>
 
     {{- if isset .Params "series" -}}
