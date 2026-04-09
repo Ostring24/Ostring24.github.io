@@ -26,7 +26,7 @@ tags: ["AI", "HBM", "DRAM", "NAND", "半导体"]
 
 在这场存储盛宴中，最耀眼的明星莫过于高带宽内存（HBM）。没有HBM，再强的GPU也只能“饿死”。
 
-![HBM 市场与需求拆解](hbm_market.png)
+![HBM 市场与需求拆解](hbm_market.excalidraw)
 
 我们对2026年HBM的整体市场规模（TAM）预期已上调至 **540亿美元**，并在2027年直奔 **750亿美元**。
 
