@@ -1,0 +1,121 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "rectangle",
+      "id": "hbm_market",
+      "x": 250,
+      "y": 100,
+      "width": 300,
+      "height": 100,
+      "roundness": { "type": 3 },
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "boundElements": [{ "id": "t_hbm", "type": "text" }]
+    },
+    {
+      "type": "text",
+      "id": "t_hbm",
+      "x": 260,
+      "y": 138,
+      "width": 280,
+      "height": 25,
+      "text": "2026 HBM TAM: $54 Billion",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "hbm_market",
+      "originalText": "2026 HBM TAM: $54 Billion",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "gpu_demand",
+      "x": 100,
+      "y": 300,
+      "width": 250,
+      "height": 80,
+      "roundness": { "type": 3 },
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "boundElements": [{ "id": "t_gpu", "type": "text" }]
+    },
+    {
+      "type": "text",
+      "id": "t_gpu",
+      "x": 110,
+      "y": 328,
+      "width": 230,
+      "height": 25,
+      "text": "GPU Demand (67%)",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "gpu_demand",
+      "originalText": "GPU Demand (67%)",
+      "autoResize": true
+    },
+    {
+      "type": "rectangle",
+      "id": "asic_demand",
+      "x": 450,
+      "y": 300,
+      "width": 250,
+      "height": 80,
+      "roundness": { "type": 3 },
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "boundElements": [{ "id": "t_asic", "type": "text" }]
+    },
+    {
+      "type": "text",
+      "id": "t_asic",
+      "x": 460,
+      "y": 328,
+      "width": 230,
+      "height": 25,
+      "text": "ASIC Demand (33%)",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e",
+      "textAlign": "center",
+      "verticalAlign": "middle",
+      "containerId": "asic_demand",
+      "originalText": "ASIC Demand (33%)",
+      "autoResize": true
+    },
+    {
+      "type": "arrow",
+      "id": "a1",
+      "x": 400,
+      "y": 200,
+      "width": 100,
+      "height": 100,
+      "points": [[0,0],[-100,100]],
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "hbm_market", "fixedPoint": [0.5, 1] },
+      "endBinding": { "elementId": "gpu_demand", "fixedPoint": [0.5, 0] }
+    },
+    {
+      "type": "arrow",
+      "id": "a2",
+      "x": 400,
+      "y": 200,
+      "width": 100,
+      "height": 100,
+      "points": [[0,0],[100,100]],
+      "endArrowhead": "arrow",
+      "startBinding": { "elementId": "hbm_market", "fixedPoint": [0.5, 1] },
+      "endBinding": { "elementId": "asic_demand", "fixedPoint": [0.5, 0] }
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}
