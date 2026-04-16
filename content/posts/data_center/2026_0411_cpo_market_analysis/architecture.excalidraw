@@ -1,0 +1,177 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "rectangle",
+      "id": "bg",
+      "x": 50,
+      "y": 50,
+      "width": 700,
+      "height": 450,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "#f8f9fa",
+      "fillStyle": "solid",
+      "roundness": { "type": 3 }
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "x": 250,
+      "y": 70,
+      "text": "Pluggable vs. CPO Architecture",
+      "fontSize": 24,
+      "fontFamily": 1,
+      "textAlign": "center"
+    },
+    {
+      "type": "text",
+      "id": "label_pluggable",
+      "x": 100,
+      "y": 120,
+      "text": "Traditional (Pluggable)",
+      "fontSize": 20,
+      "fontFamily": 1
+    },
+    {
+      "type": "rectangle",
+      "id": "asic_p",
+      "x": 100,
+      "y": 160,
+      "width": 100,
+      "height": 80,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "boundElements": [{ "id": "t_asic_p", "type": "text" }]
+    },
+    {
+      "type": "text",
+      "id": "t_asic_p",
+      "x": 125,
+      "y": 190,
+      "text": "ASIC",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "containerId": "asic_p"
+    },
+    {
+      "type": "rectangle",
+      "id": "optics_p",
+      "x": 350,
+      "y": 160,
+      "width": 120,
+      "height": 80,
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "boundElements": [{ "id": "t_optics_p", "type": "text" }]
+    },
+    {
+      "type": "text",
+      "id": "t_optics_p",
+      "x": 365,
+      "y": 190,
+      "text": "Optical Module",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "containerId": "optics_p"
+    },
+    {
+      "type": "arrow",
+      "id": "link_p",
+      "x": 200,
+      "y": 200,
+      "width": 150,
+      "height": 0,
+      "points": [[0, 0], [150, 0]],
+      "strokeWidth": 2,
+      "strokeColor": "#fa5252"
+    },
+    {
+      "type": "text",
+      "id": "desc_p",
+      "x": 210,
+      "y": 170,
+      "text": "Long PCB Trace (Lossy)",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#fa5252"
+    },
+    {
+      "type": "text",
+      "id": "label_cpo",
+      "x": 100,
+      "y": 300,
+      "text": "Co-Packaged Optics (CPO)",
+      "fontSize": 20,
+      "fontFamily": 1
+    },
+    {
+      "type": "rectangle",
+      "id": "package_c",
+      "x": 100,
+      "y": 340,
+      "width": 300,
+      "height": 120,
+      "backgroundColor": "#c3fae8",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "roundness": { "type": 3 }
+    },
+    {
+      "type": "rectangle",
+      "id": "asic_c",
+      "x": 120,
+      "y": 360,
+      "width": 100,
+      "height": 80,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "boundElements": [{ "id": "t_asic_c", "type": "text" }]
+    },
+    {
+      "type": "text",
+      "id": "t_asic_c",
+      "x": 145,
+      "y": 390,
+      "text": "ASIC",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "containerId": "asic_c"
+    },
+    {
+      "type": "rectangle",
+      "id": "optics_c",
+      "x": 240,
+      "y": 360,
+      "width": 140,
+      "height": 80,
+      "backgroundColor": "#ffd8a8",
+      "fillStyle": "solid",
+      "boundElements": [{ "id": "t_optics_c", "type": "text" }]
+    },
+    {
+      "type": "text",
+      "id": "t_optics_c",
+      "x": 250,
+      "y": 390,
+      "text": "Optical Engines",
+      "fontSize": 16,
+      "fontFamily": 1,
+      "containerId": "optics_c"
+    },
+    {
+      "type": "text",
+      "id": "desc_c",
+      "x": 180,
+      "y": 465,
+      "text": "Short Integration (Efficiency)",
+      "fontSize": 14,
+      "fontFamily": 1,
+      "strokeColor": "#40c057"
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

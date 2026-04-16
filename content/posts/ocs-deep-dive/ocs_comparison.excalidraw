@@ -1,0 +1,195 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    {
+      "type": "rectangle",
+      "id": "bg",
+      "x": 0,
+      "y": 0,
+      "width": 800,
+      "height": 500,
+      "strokeColor": "#ffffff",
+      "backgroundColor": "#ffffff",
+      "fillStyle": "solid",
+      "opacity": 100
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "x": 260,
+      "y": 30,
+      "text": "OCS 光学电路交换：打破 AI 算力墙",
+      "fontSize": 24,
+      "fontFamily": 1,
+      "strokeColor": "#1e1e1e"
+    },
+    {
+      "type": "rectangle",
+      "id": "box1",
+      "x": 80,
+      "y": 120,
+      "width": 280,
+      "height": 300,
+      "strokeColor": "#dee2e6",
+      "roundness": { "type": 3 }
+    },
+    {
+      "type": "text",
+      "id": "t1",
+      "x": 130,
+      "y": 140,
+      "text": "传统电交换 (Clos)",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "strokeColor": "#fa5252"
+    },
+    {
+      "type": "rectangle",
+      "id": "gpu1",
+      "x": 140,
+      "y": 340,
+      "width": 160,
+      "height": 50,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "boundElements": [{ "id": "tg1", "type": "text" }]
+    },
+    {
+      "type": "text",
+      "id": "tg1",
+      "x": 150,
+      "y": 355,
+      "text": "GPU / TPU",
+      "fontSize": 16,
+      "containerId": "gpu1"
+    },
+    {
+      "type": "rectangle",
+      "id": "sw1",
+      "x": 140,
+      "y": 200,
+      "width": 160,
+      "height": 80,
+      "backgroundColor": "#ffc9c9",
+      "fillStyle": "solid",
+      "boundElements": [{ "id": "ts1", "type": "text" }]
+    },
+    {
+      "type": "text",
+      "id": "ts1",
+      "x": 150,
+      "y": 215,
+      "text": "电交换机 ASIC\n(O-E-O 转换)",
+      "fontSize": 16,
+      "containerId": "sw1"
+    },
+    {
+      "type": "arrow",
+      "id": "a1",
+      "x": 220,
+      "y": 340,
+      "points": [[0,0], [0,-60]],
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "text",
+      "id": "label1",
+      "x": 120,
+      "y": 290,
+      "text": "4-6 个光模块/链路",
+      "fontSize": 14,
+      "strokeColor": "#fa5252"
+    },
+    {
+      "type": "rectangle",
+      "id": "box2",
+      "x": 440,
+      "y": 120,
+      "width": 280,
+      "height": 300,
+      "strokeColor": "#dee2e6",
+      "roundness": { "type": 3 }
+    },
+    {
+      "type": "text",
+      "id": "t2",
+      "x": 500,
+      "y": 140,
+      "text": "OCS 光交换 (Google)",
+      "fontSize": 20,
+      "fontFamily": 1,
+      "strokeColor": "#40c057"
+    },
+    {
+      "type": "rectangle",
+      "id": "gpu2",
+      "x": 500,
+      "y": 340,
+      "width": 160,
+      "height": 50,
+      "backgroundColor": "#a5d8ff",
+      "fillStyle": "solid",
+      "boundElements": [{ "id": "tg2", "type": "text" }]
+    },
+    {
+      "type": "text",
+      "id": "tg2",
+      "x": 510,
+      "y": 355,
+      "text": "GPU / TPU",
+      "fontSize": 16,
+      "containerId": "gpu2"
+    },
+    {
+      "type": "rectangle",
+      "id": "sw2",
+      "x": 500,
+      "y": 200,
+      "width": 160,
+      "height": 80,
+      "backgroundColor": "#b2f2bb",
+      "fillStyle": "solid",
+      "boundElements": [{ "id": "ts2", "type": "text" }]
+    },
+    {
+      "type": "text",
+      "id": "ts2",
+      "x": 510,
+      "y": 215,
+      "text": "OCS (MEMS 镜面)\n(纯光直连)",
+      "fontSize": 16,
+      "containerId": "sw2"
+    },
+    {
+      "type": "arrow",
+      "id": "a2",
+      "x": 580,
+      "y": 340,
+      "points": [[0,0], [0,-60]],
+      "endArrowhead": "arrow"
+    },
+    {
+      "type": "text",
+      "id": "label2",
+      "x": 480,
+      "y": 290,
+      "text": "2 个光模块/链路 (端到端)",
+      "fontSize": 14,
+      "strokeColor": "#40c057"
+    },
+    {
+      "type": "text",
+      "id": "footer",
+      "x": 220,
+      "y": 450,
+      "text": "OCS 减少了单条链路的模块数量，但解锁了 10 万级的集群规模",
+      "fontSize": 14,
+      "strokeColor": "#868e96"
+    }
+  ],
+  "appState": {
+    "viewBackgroundColor": "#ffffff"
+  }
+}

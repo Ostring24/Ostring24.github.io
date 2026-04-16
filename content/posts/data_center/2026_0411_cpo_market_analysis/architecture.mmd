@@ -1,0 +1,22 @@
+graph TD
+    subgraph Front_Panel [Front Panel]
+        ELS[ELS: External Laser Source]
+    end
+
+    subgraph ASIC_Package [ASIC Package / Substrate]
+        subgraph Optical_Engine [Optical Engine]
+            PIC[PIC: Photonic IC]
+            FAU[FAU: Fibre Array Unit]
+        end
+        ASIC[Switch ASIC or xPU]
+    end
+
+    ELS -- "CW Light" --> FAU
+    FAU -- "Fiber" --> PIC
+    ASIC -- "Short Link - No DSP" --> PIC
+
+    style ASIC fill:#a5d8ff
+    style ELS fill:#ffd8a8
+    style PIC fill:#c3fae8
+    style FAU fill:#d0bfff
+    style ASIC_Package fill:#f8f9fa,stroke-dasharray: 5 5

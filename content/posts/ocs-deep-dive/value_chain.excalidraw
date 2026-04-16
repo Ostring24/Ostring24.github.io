@@ -1,0 +1,31 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "hermes-agent",
+  "elements": [
+    { "type": "rectangle", "id": "bg", "x": 0, "y": 0, "width": 800, "height": 550, "strokeColor": "#ffffff", "backgroundColor": "#ffffff", "fillStyle": "solid", "opacity": 100 },
+    { "type": "text", "id": "title", "x": 260, "y": 30, "text": "OCS 产业链价值迁移分析 (修正版)", "fontSize": 24, "fontFamily": 1, "strokeColor": "#1e1e1e" },
+    
+    { "type": "rectangle", "id": "chip", "x": 80, "y": 100, "width": 220, "height": 80, "backgroundColor": "#d0bfff", "fillStyle": "solid", "roundness": { "type": 3 } },
+    { "type": "text", "id": "t_chip", "x": 100, "y": 120, "text": "硅光 / ASIC 厂商\n(Nvidia, Broadcom)", "fontSize": 18, "fontFamily": 1 },
+    
+    { "type": "rectangle", "id": "module", "x": 80, "y": 250, "width": 220, "height": 80, "backgroundColor": "#ffc9c9", "fillStyle": "solid", "roundness": { "type": 3 } },
+    { "type": "text", "id": "t_module", "x": 100, "y": 270, "text": "传统模块厂商\n(中际旭创, Coherent)", "fontSize": 18, "fontFamily": 1 },
+    
+    { "type": "rectangle", "id": "ocs", "x": 480, "y": 175, "width": 240, "height": 100, "backgroundColor": "#b2f2bb", "fillStyle": "solid", "roundness": { "type": 3 } },
+    { "type": "text", "id": "t_ocs", "x": 500, "y": 200, "text": "OCS 系统集成商\n(Celestica)", "fontSize": 20, "fontFamily": 1 },
+    
+    { "type": "rectangle", "id": "fiber", "x": 480, "y": 380, "width": 240, "height": 80, "backgroundColor": "#c3fae8", "fillStyle": "solid", "roundness": { "type": 3 } },
+    { "type": "text", "id": "t_fiber", "x": 500, "y": 400, "text": "光纤 / FAU 连接器\n(FOCI, Corning)", "fontSize": 18, "fontFamily": 1 },
+
+    { "type": "arrow", "id": "a1", "x": 300, "y": 140, "points": [[0,0], [180,60]], "strokeColor": "#1e1e1e", "endArrowhead": "arrow" },
+    { "type": "arrow", "id": "a2", "x": 300, "y": 290, "points": [[0,0], [180,-60]], "strokeColor": "#fa5252", "endArrowhead": "arrow" },
+    
+    { "type": "arrow", "id": "a3", "x": 600, "y": 275, "points": [[0,0], [0,105]], "strokeColor": "#40c057", "endArrowhead": "arrow" },
+    { "type": "text", "id": "label_3", "x": 610, "y": 300, "text": "高密度光互连需求爆发", "fontSize": 14, "strokeColor": "#40c057", "fontFamily": 1 },
+
+    { "type": "text", "id": "neg", "x": 310, "y": 265, "text": "挤压：Spine 层模块需求下降", "fontSize": 14, "strokeColor": "#fa5252", "fontFamily": 1 },
+    { "type": "text", "id": "pos", "x": 310, "y": 125, "text": "赋能：驱动 10 万级大集群", "fontSize": 14, "strokeColor": "#40c057", "fontFamily": 1 }
+  ],
+  "appState": { "viewBackgroundColor": "#ffffff" }
+}
