@@ -16,28 +16,18 @@ tags: ["Anthropic", "Claude", "LLM", "Tokenizer"]
 
 然而，*Anthropic* 却逆势而行。根据 *Abhishek Ray* 的详尽测试，*Claude 4.7* 的分词策略变得更加“细碎”：
 
-![Token Ratio Comparison](comparison.png)
-
-```mermaid
-graph TD
-    A[Claude 4.7 Token Ratio] --> B(Technical Docs: 1.47x)
-    A --> C(CLAUDE.md: 1.445x)
-    A --> D(User Prompt: 1.373x)
-    A --> E(Python Code: 1.29x)
-    A --> F(English Prose: 1.20x)
-    A --> G(CJK: 1.01x)
-    style B fill:#f96,stroke:#333,stroke-width:2px
-    style C fill:#f96,stroke:#333,stroke-width:2px
-    style G fill:#9f6,stroke:#333,stroke-width:2px
-```
-
-*   **技术文档与代码是重灾区：** 针对技术文档的 Token 消耗增长了 47%，常用的 `CLAUDE.md` 配置文件增长了 44.5%，TypeScript 代码则增长了 36%。
-*   **英文散文影响较小：** 普通文本的增长约在 20% 左右。
-*   **CJK（中日韩）用户几乎无感：** 对于中文和日文内容，Token 消耗比例仅为 1.01，几乎可以忽略不计。
+| 内容类型 | Token 增长比例 |
+| :--- | :--- |
+| **技术文档 (Technical Docs)** | **1.47x** |
+| **CLAUDE.md (配置文件)** | **1.445x** |
+| **用户提示词 (User Prompt)** | **1.373x** |
+| **Python 代码** | **1.29x** |
+| **英文散文 (English Prose)** | **1.20x** |
+| **中日韩文本 (CJK)** | **1.01x** |
 
 这意味着，*Claude 4.7* 正在向其最核心的用户群——**开发者**——征收一笔隐形的“精度税”。
 
-![Anthropic Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Anthropic_logo.svg/512px-Anthropic_logo.svg.png)
+![Anthropic Logo](anthropic_logo.png)
 
 ### 为什么 *Anthropic* 要这么做？
 
