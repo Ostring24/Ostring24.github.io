@@ -65,3 +65,9 @@ tags: ["GPS", "导航", "物理", "相对论"]
 当你下次打开导航时，不妨回想一下：为了定位你的路口，几颗载着原子钟的金属球正在 20,000 公里的高空与你对话，并在纳秒之间应用着宇宙最深奥的物理法则。
 
 这一切精密协作，只为了告诉你：**请在前方路口左转。**
+
+
+---
+
+> 来源：*PerThirtySix - How The Heck Does GPS Work?* 
+> 原文链接：https://perthirtysix.com/how-the-heck-does-gps-work
