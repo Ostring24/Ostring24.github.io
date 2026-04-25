@@ -7,8 +7,6 @@ categories: ["Invest"]
 author: "Ostring"
 ---
 
-![](images/b4c5ea404a27f42f52ad36ba85d0797840ed95171d7bb03d6cdbae38d4e8d393.jpg)
-
 自 2026 年初 *Anthropic* 发布 *Claude Code* 以来，编程智能体（Agentic Coding）的市场格局正以周为单位发生剧变。过去三个月里，从 *Google* 的 *Gemini 3.1 Pro* 到 *Meta* 的 *Muse Spark*，各大实验室几乎都在密集输出针对编程任务优化的 Checkpoint。然而，真正决定胜负的转折点发生在最近几天：*OpenAI* 带着代号为 “Spud” 的 **GPT-5.5** 重回王座，而 *Anthropic* 则通过 **Opus 4.7** 开启了极具争议的“依云水（Evian Water）”溢价策略。
 
 ### 告别“Token 经济学”：效率才是真金白银
