@@ -1,4 +1,11 @@
-# Google Deepmind CEO 最新采访：AGI 正在来临
+---
+title: "Google Deepmind CEO 最新采访：AGI 正在来临"
+date: 2025-05-29T09:57:25+08:00
+lastmod: 2025-05-29T09:57:25+08:00
+summary: "原文作者作者：凯文·罗斯和凯西·牛顿"
+draft: false
+---
+
 原文作者**作者：凯文·罗斯和凯西·牛顿** 
 
 OString 整理并编译

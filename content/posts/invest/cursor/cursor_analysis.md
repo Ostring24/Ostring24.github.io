@@ -1,7 +1,10 @@
-
-
-
-# cursor 已经成为了LLM 的入口
+---
+title: "cursor 已经成为了LLM 的入口"
+date: 2025-11-28T12:22:55+08:00
+lastmod: 2025-11-28T12:22:55+08:00
+summary: "Cursor 的 B 轮融资中，Thrive Capital、Andreessen Horowitz、Benchmark 等顶级风投机构参与了投资"
+draft: false
+---
 
 Cursor 的 B 轮融资中，Thrive Capital、Andreessen Horowitz、Benchmark 等顶级风投机构参与了投资
 

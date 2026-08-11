@@ -4,6 +4,8 @@ date: 2026-04-18T15:55:00+08:00
 draft: false
 categories: ["tech_news"]
 tags: ["Anthropic", "Claude", "LLM", "Tokenizer"]
+lastmod: 2026-04-22T20:38:25+08:00
+summary: "这篇文章揭示了一个令开发者和投资者都感到意外的真相：虽然 Anthropic 在 Claude 4."
 ---
 
 这篇文章揭示了一个令开发者和投资者都感到意外的真相：虽然 *Anthropic* 在 *Claude 4.7* 的发布说明中轻描淡写地提到新分词器（*Tokenizer*）会导致 Token 数量增加 “1.0 到 1.35 倍”，但实际的技术文档测试结果却高达 **1.47 倍**。

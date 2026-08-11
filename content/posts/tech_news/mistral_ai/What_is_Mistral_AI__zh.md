@@ -1,4 +1,10 @@
-# **快被遗忘的Mistral AI 的最新动向跟踪**
+---
+title: "快被遗忘的Mistral AI 的最新动向跟踪"
+date: 2025-05-29T09:57:25+08:00
+lastmod: 2025-05-29T09:57:25+08:00
+summary: "Mistral AI 自 2023 年创立以来，已筹集了大量资金，其雄心壮志是“将前沿 AI 掌握在每个人手中”。"
+draft: false
+---
 
 ![](./image.png)
 

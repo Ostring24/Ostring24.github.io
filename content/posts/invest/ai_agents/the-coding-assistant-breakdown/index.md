@@ -5,6 +5,8 @@ draft: false
 tags: ["AI", "LLM", "Coding Agents", "OpenAI", "Anthropic", "DeepSeek", "Invest"]
 categories: ["Invest"]
 author: "Ostring"
+lastmod: 2026-08-11T15:40:32+08:00
+summary: "自 2026 年初 Anthropic 发布 Claude Code 以来，编程智能体（Agentic Coding）的市场格局正以周为单位发生剧变。"
 ---
 
 ![](images/7bcb4b69f0cb9b79eb7f84ebbf5d0bdfcb7089044d4a2308afa9b5baff38693e.jpg)

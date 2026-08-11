@@ -1,6 +1,10 @@
-# **苹果WWDC 2025 前瞻**
-
-
+---
+title: "苹果WWDC 2025 前瞻"
+date: 2025-06-12T10:09:23+08:00
+lastmod: 2025-06-12T10:09:23+08:00
+summary: "马上苹果公司将于太平洋时间周一上午10点开始的主题演讲将介绍iPhone、iPad、Mac、Apple TV和Apple Watch的重新设计的[软件界面]，以及对Vision P…"
+draft: false
+---
 
 ![](_page_183_Picture_3.jpeg)
 马上苹果公司将于太平洋时间周一上午10点开始的主题演讲将介绍iPhone、iPad、Mac、Apple TV和Apple Watch的重新设计的[软件界面]，以及对Vision Pro头显的少量改进。从市场上搜集到的所有关于Apple 即将发布所有信息，尤其是有关与AI 方面，Apple 在端侧AI 的部署方面明显是落后于国内手机厂商半个身位了，年初Apple Intelligence 的发布看来并没有起到很好的助推作用。

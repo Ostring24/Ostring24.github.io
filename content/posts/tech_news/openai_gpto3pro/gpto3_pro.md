@@ -1,7 +1,10 @@
-
-
-
-# OpenAI O3 pro的一些反馈
+---
+title: "OpenAI O3 pro的一些反馈"
+date: 2025-11-28T12:22:55+08:00
+lastmod: 2025-11-28T12:22:55+08:00
+summary: "OpenAI 最近推出了 GPT-3 Pro，这是他们迄今为止最强大的 AI 模型。"
+draft: false
+---
 
 OpenAI 最近推出了 GPT-3 Pro，这是他们迄今为止最强大的 AI 模型。
 

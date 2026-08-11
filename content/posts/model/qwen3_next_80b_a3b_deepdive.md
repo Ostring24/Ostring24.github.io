@@ -1,4 +1,10 @@
-# Qwen3-next 模型DeepDive
+---
+title: "Qwen3-next 模型DeepDive"
+date: 2026-08-11T15:40:32+08:00
+lastmod: 2026-08-11T15:40:32+08:00
+summary: "Qwen3NextModel("
+draft: false
+---
 
 # model 结构
 

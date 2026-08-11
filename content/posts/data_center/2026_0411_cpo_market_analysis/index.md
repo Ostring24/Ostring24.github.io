@@ -3,9 +3,10 @@ title: "AI 算力爆发下的互联革命：CPO 技术全解析"
 date: 2026-04-11T10:00:00+08:00
 categories: ["data_center"]
 tags: ["CPO", "Networking", "AI-Infrastructure", "Silicon-Photonics"]
+lastmod: 2026-04-16T17:01:58+08:00
+summary: "随着 AI 基础设施（[[ai-infrastructure]]）的快速扩张，数据中心对带宽和功耗的要求达到了前所未有的高度。"
+draft: false
 ---
-
-# AI 算力爆发下的互联革命：CPO 技术全解析
 
 随着 AI 基础设施（[[ai-infrastructure]]）的快速扩张，数据中心对带宽和功耗的要求达到了前所未有的高度。传统的插拔式光模块正逐渐触及物理极限，而 **CPO (Co-Packaged Optics，共封装光学)** 正在成为行业公认的破局点。
 
