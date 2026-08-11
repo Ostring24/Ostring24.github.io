@@ -219,17 +219,33 @@ def process(path: Path, apply: bool = True) -> list[str]:
             front = set_field(front, "lastmod", f"lastmod: {d}")
             added.append("lastmod")
 
+    is_private = re.search(r"^private\s*:\s*true\s*$", front, re.MULTILINE) is not None
+
     # -- summary -------------------------------------------------------------
-    if not has_key(front, "summary") and not has_key(front, "description"):
+    # Skip for private posts: the page never renders or appears in a list, so a
+    # summary would only duplicate the body text into the front matter.
+    if not is_private \
+            and not has_key(front, "summary") and not has_key(front, "description"):
         s = make_summary(body)
         if s:
             front = set_field(front, "summary", f"summary: {yaml_quote(s)}")
             added.append("summary")
 
     # -- draft ---------------------------------------------------------------
-    if not has_key(front, "draft"):
+    # Not for private posts: `draft: false` next to `private: true` reads as a
+    # contradiction, and draft is irrelevant once _build suppresses the page.
+    if not is_private and not has_key(front, "draft"):
         front = set_field(front, "draft", "draft: false")
         added.append("draft")
+
+    # -- private -------------------------------------------------------------
+    # `private: true` is a one-line alias. Hugo has no such concept, so expand
+    # it into the _build block that actually suppresses the page. Unlike
+    # `draft`, this hides the post even from `hugo -D`, so `make serve` will
+    # not render it either.
+    if is_private and "_build:" not in front:
+        front += "\n_build:\n  list: never\n  render: never"
+        added.append("private->_build")
 
     if not added:
         return []

@@ -62,6 +62,7 @@ tags: []
 | `lastmod` | **自动** | 最后一次提交时间 |
 | `summary` | **自动**（建议精修） | 自动取正文第一段。首页卡片显示的就是它，值得润色一下 |
 | `draft` | 手动 | `true` 不上线。`make serve` 能看到，线上看不到 |
+| `private` | 手动 | `true` 永不发布，连 `make serve` 都不显示。见下方 |
 | `tags` | **建议手写** | 2–4 个。见下方词表 |
 | `cover.image` | 可选 | 有封面图时写 |
 | `aliases` | 极少用 | 改 URL 时保留旧链接 |
@@ -80,6 +81,56 @@ make new S=tech SLUG=my-post T="我的标题"
 
 > 站点原来 34 篇文章就是靠这个机制救回来的。曾经线上标题直接显示成
 > `**苹果WWDC 2025 前瞻**`，星号裸奔。
+
+---
+
+## 不想发布的文章：`draft` 还是 `private`？
+
+两种机制，区别只有一条：**你自己还看不看得到。**
+
+| | 上线 | `make serve` 本地预览 | 用途 |
+|---|:---:|:---:|---|
+| `draft: true` | ❌ | ✅ **能看到** | 还没写完，想边写边预览 |
+| `private: true` | ❌ | ❌ **也看不到** | 就是不打算发，只想留在仓库里 |
+
+两者都不会产生页面、不进站内搜索、不进 RSS、不产生标签页。
+
+```bash
+# 直接创建一篇私密文章
+./scripts/new-post.sh --private research my-notes "内部笔记"
+```
+
+或者给已有文章加一行：
+
+```yaml
+private: true
+```
+
+然后 `make sync`，脚本会自动展开成 Hugo 真正需要的形式：
+
+```yaml
+private: true
+_build:
+  list: never
+  render: never
+```
+
+> `private` 不是 Hugo 的内置字段，`_build` 才是。写一行 `private: true` 就够了，
+> 嵌套的 YAML 交给脚本，避免缩进写错导致文章意外上线。
+
+**想改回发布**：删掉 `private: true` 和整个 `_build` 块，再把 `draft` 设成 `false`。
+
+### ⚠️ 「不发布」不等于「私密」
+
+**这个 GitHub 仓库是公开的。** `private: true` 只是让文章不出现在网站上，
+文件本身仍然可以被任何人在
+`github.com/Ostring24/ostring.github.io` 里读到。
+
+真正需要保密的内容，选一种：
+
+1. **放在仓库外** —— 最简单可靠，比如 `~/notes/`
+2. **加进 `.gitignore`** —— 文件留在本地，永远不推送（代价：换机器就没了，也没有备份）
+3. **把仓库改成 private** —— 注意：从私有仓库发布 GitHub Pages 需要付费方案
 
 ---
 

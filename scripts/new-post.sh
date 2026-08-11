@@ -17,17 +17,30 @@ die() { printf '\033[31merror:\033[0m %s\n' "$1" >&2; exit 1; }
 
 usage() {
   cat >&2 <<EOF
-usage: $0 <section> <slug> ["标题"]
+usage: $0 [--private] <section> <slug> ["标题"]
 
-  section   one of: $SECTIONS
-  slug      URL segment, lowercase-with-hyphens, ASCII only
-  标题       optional; defaults to the slug, edit it later in the file
+  section     one of: $SECTIONS
+  slug        URL segment, lowercase-with-hyphens, ASCII only
+  标题         optional; defaults to the slug, edit it later in the file
+
+  --private   never publish this post. Unlike draft, it is hidden from
+              'make serve' too, and produces no page, no search entry,
+              no RSS item and no tag page.
+              NOTE: the repo is public, so the file is still readable on
+              GitHub. This hides it from the site, not from the world.
 
 example:
   $0 tech qwen3-next-deep-dive "Qwen3-Next 模型深度解析"
+  $0 --private research my-notes "内部笔记"
 EOF
   exit 1
 }
+
+PRIVATE=0
+if [ "${1:-}" = "--private" ]; then
+  PRIVATE=1
+  shift
+fi
 
 [ $# -ge 2 ] || usage
 
@@ -57,7 +70,31 @@ mkdir -p "$DIR"
 OFFSET="$(date +%z)"                        # e.g. +0800
 DATE="$(date +%Y-%m-%dT%H:%M:%S)${OFFSET:0:3}:${OFFSET:3:2}"
 
-cat > "$DIR/index.md" <<EOF
+if [ "$PRIVATE" = 1 ]; then
+  cat > "$DIR/index.md" <<EOF
+---
+title: "$TITLE"
+date: $DATE
+private: true
+tags: []
+---
+
+<!--
+  private: true — this post is never published. 'make sync' expands it into
+  the _build block Hugo needs. It produces no page, no search entry, no RSS
+  item and no tag page, and is hidden from 'make serve' too.
+
+  To publish later: delete the 'private: true' line AND the _build block,
+  then set draft: false.
+
+  WARNING: the GitHub repo is public, so this file is still readable at
+  github.com/Ostring24/ostring.github.io. This hides the post from the
+  site, not from the internet.
+-->
+
+EOF
+else
+  cat > "$DIR/index.md" <<EOF
 ---
 title: "$TITLE"
 date: $DATE
@@ -69,6 +106,9 @@ tags: []
 <!--
   draft: true keeps this off the site. Flip to false when ready.
   'make serve' previews drafts; the deployed build excludes them.
+
+  Never want to publish it? Use 'private: true' instead of 'draft: true'
+  (or create it with: ./scripts/new-post.sh --private ...).
 
   Images: drop the file in this folder, then reference it directly:
       ![架构图](arch.png)
@@ -82,10 +122,17 @@ tags: []
 -->
 
 EOF
+fi
 
 printf '\033[32mcreated\033[0m %s/index.md\n' "$DIR"
-printf '  preview:  make serve\n'
-printf '  publish:  set draft: false, then make publish\n'
+if [ "$PRIVATE" = 1 ]; then
+  printf '  \033[33mprivate\033[0m — never published, and not shown by "make serve"\n'
+  printf '  the repo is public, so the file is still readable on GitHub\n'
+  printf '  to publish later: remove "private: true" and the _build block\n'
+else
+  printf '  preview:  make serve\n'
+  printf '  publish:  set draft: false, then make publish\n'
+fi
 
 if [ -n "${EDITOR:-}" ]; then
   "$EDITOR" "$DIR/index.md"

@@ -40,6 +40,11 @@ make publish
   overwrites author-written values, so it is safe to re-run.
 - **Reuse existing tags** (see WRITING.md for the vocabulary). New spellings
   of an existing concept fragment the tag index.
+- **Two ways to withhold a post.** `draft: true` hides it from the site but
+  `make serve` still renders it. `private: true` hides it everywhere, including
+  preview; `sync_frontmatter.py` expands it into the `_build: {list: never,
+  render: never}` block Hugo actually understands — write the one-liner, not
+  the nested YAML. Neither is real privacy: the repo is public.
 - `hasCJKLanguage = true` in hugo.toml is load-bearing — without it Hugo
   counts words by whitespace and every Chinese post reports "1 min".
 - Never reintroduce a build step that runs `git restore`. The old `fire.sh`
