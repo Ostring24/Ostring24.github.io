@@ -48,9 +48,9 @@ tags: ["搜广推", "推荐系统", "系统设计"]
 ### 排序（所有问题都是排序）
 其中涉及到的处理过程从召回，粗排（Pre-Ranking），精排，可能最后还会有重排。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/6fef93eabb124c4e978ccf27782e03f8.png)
+![在这里插入图片描述](img-01.png)
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/09783500aa84496a87c9e737489eab32.png)
+![在这里插入图片描述](img-02.png)
 
 - 召回 ：候选广告数量庞大（如亿级），但模型复杂度较低，通常使用基于协同过滤或双塔模型（如DSSM）等轻量级模型。通过用户画像、历史行为等特征，快速过滤出与用户兴趣相关的广告候选集。
 - 粗排：模型复杂度中等，通常使用LightGBM、XGBoost等集成学习模型，或基于内积的双塔模型，对召回阶段返回的候选广告进行初步排序，筛选出一部分高质量的广告，作为精排阶段的输入，候选广告数量级从亿级降至万级或十万级
@@ -58,7 +58,7 @@ tags: ["搜广推", "推荐系统", "系统设计"]
 
 # 我们重点关注精排阶段（营收的关键）
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/5fae6d3c138c4100ab7f07662f907db0.png)
+![在这里插入图片描述](img-03.png)
 
 ## 模型结构特点
 模型方面，推荐模型的构建，是以最大化CTR/CVR 为目标，比如**Wide&Deep, DeepFM 和DLRM**，以Meta 的DLRM为例，主要表现为以下两个特点：
@@ -67,7 +67,7 @@ tags: ["搜广推", "推荐系统", "系统设计"]
 - embedding table feature 表征空间巨大，通过扩张输入特征维度和特征id种类，可以丰富输入的有效信息，提升模型的表达能力；
 - 输入feature 具备sparse 特性，同时具有实时更新需求
 
-![DLRM 结构](https://i-blog.csdnimg.cn/direct/d81d8bc2e3b440e9a8b3b3562f0ff2ed.gif#pic_center)
+![DLRM 结构](img-04.gif)
 
 从图上可以看到加速这类网络我们会面临几个问题:
 
@@ -79,15 +79,15 @@ tags: ["搜广推", "推荐系统", "系统设计"]
 	- Tensor/model 并行拆解算力bound/带宽bound问题；
 - 基于embedding feature并行分布式，同时又会引入卡间通信的开销，因此这部分也会面临通信bound 的挑战
 
-![分布式通信](https://i-blog.csdnimg.cn/direct/d2bcae6ea5a84aae836a8cda35a351c3.png)
+![分布式通信](img-05.png)
 
 ## 模型耗时拆解
-![模型耗时拆解](https://i-blog.csdnimg.cn/direct/42518716c465454f9205d60735f3cb34.png)
+![模型耗时拆解](img-06.png)
 
 以DLRM 模型为例，[MLperf](https://mlcommons.org/benchmarks/training)有相关的benchmark.(MLCommons Open ML/AI Engineering Consortium. 2024. MLPerf Benchmarks. Accessed: 2024-04-20)
 参考论文（Embedding Optimization for Training Large-scale Deep Learning with EMbark ）
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/87eb63d4029d4cc3a992ce8f96e8aaaa.png)
+![在这里插入图片描述](img-07.png)
 
 以上数据和我们实测数据基本吻合，在互联网大型推荐系统中，Embedding Table size 大都在TB 数量级，100+ GPU 是常见的应用场景，在这种case 下，卡间通信的开销占到总开销的50% 以上，其次是Embedding Op 的执行开销，其中包含（lookup/insert/update ...）等常见操作，最后才是Dense NN 的开销。
 ## 部署框架方面
@@ -108,7 +108,7 @@ Nvidia 有Merlin 系统，包含前端的数据清洗和处理，以及训推系
 
 总结下来，目前主流的TorchRec和HugeCTR，其实代表的是两大阵营，Torch和Tensorflow，目前HugeCTR 对后端对Tensorflow 支持较好，其支持tensorflow hps 插件，无缝集成tensorflow，而TorchRec 原生支持Torch 后端算子，底层FBGEMM 算子以TorchAten 的形式接入Torch 生态。 
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/2fe3b95359034ed099fc7acbd7b4d375.png)
+![在这里插入图片描述](img-08.png)
 
 后面重点分析HugeCTR 和TorchRec 在体系架构上的差异。
 
@@ -237,7 +237,7 @@ flowchart LR
 
 #### TorchRec 对embedding cache 的组织
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/23339bf9ecd5410dac531eaf67214789.png)
+![在这里插入图片描述](img-09.png)
 cache 的组织和管理通过几块buffer 来做维护，共同构成了 TBE (Table Batched Embedding) 的缓存机制，存储了缓存的索引映射、状态信息、实际的 embedding 权重以及缓存未命中的统计数据， 这些 buffers 的具体使用方式取决于所选择的缓存算法（LRU 或 LFU）
 
 
@@ -301,7 +301,7 @@ embedding table 通过卡间并行（模型并行）的方式在多卡上进行�
 
 - 在同一张卡内，特征值按照不同领域（field）进行划分，group 在不同的slot 中， 不同的slot 中的特征值在出口处进行concate 操作，提供对外操作（get/insert/...）接口；
 - 卡间按照embedding table 的并行性进行切分，卡间通过NCCL进行跨卡alltoall 同步；
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/b3838436c6cb46329ca04b222abd2fbf.png)
+![在这里插入图片描述](img-10.png)
 **注意**: 
 - inference 相比于training，只存在`get` 操作。
 - 处理embedding 在线推理时的冷启动问题，可以参考这篇文章：https://mp.weixin.qq.com/s/xUBK-x4TiTzJaOilWXIbQw
@@ -320,15 +320,15 @@ embedding table 通过卡间并行（模型并行）的方式在多卡上进行�
 
 Embedding op 的优化，具体是，参考https://www.php.cn/faq/513413.html：
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/0d075f970d2d4e6ab7b305fd591d1d7d.png)
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/bf274e9cd29146c994d8a4c2b500cca3.png)
+![在这里插入图片描述](img-11.png)
+![在这里插入图片描述](img-12.png)
 
 - 实现一个 embedding lookup kernel，也就是要从一个大的 embedding 里面找到一堆 ID 对应的 embedding vector，那么普通的实现里，会给每个 GPU thread 分配一个 ID，让他们分别去找对应的 embedding。这个时候我们要考虑到，GPU 底层是按 warp 进行调度的，一个 warp 里的 32 个 thread 会一起进行显存读写。这意味着，在上述样流程里，虽然在读取 ID 时连续地访问了显存，但后续的拷贝变成了一个随机读写的状态。对于硬件来说，随机读写无法充分利用显存带宽，运行效率也就不够高
 - TorchRec 则是在每个 thread 读到 ID 后，利用 shuffle_sync 这样的 warp primitive，将 ID 广播至 warp 内的所有thread 上，从而让一个 wrap 里 32 个 thread 去同时处理同一个 embedding，从而可以进行连续的内存读写，使得显存的带宽利用效率有明显的提升，让 kernel 的速度得到数倍提升。
 
 这边还有一张图，可以更清晰的反映前向和后向Embedding table 的操作过程，完整的实现代码在`FBGEMM` 仓库中，主要由Meta 做维护，后端除了`cuda`，还支持`rocom`
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/c97a84f3f1d64c6cb9e4a426bb2955b3.png)
+![在这里插入图片描述](img-13.png)
 
 >hybrid kernel fusion mechanism to minimize the CUDA kernel launch
 fuses the backward pass with the sparse optimizer to further reduce kernel launch overhead and avoid materializing gradients to the embedding tables
@@ -338,7 +338,7 @@ kernel fusion improves the overall performance of embedding computations by up t
 
 # 完整方案落地对芯片和系统的需求
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/2a61e5da7d634c21b1dc88a38f6e553a.png)
+![在这里插入图片描述](img-14.png)
 
 ## Dense+ Sparse 模型结构对算力芯片的需求
 
@@ -363,7 +363,7 @@ kernel fusion improves the overall performance of embedding computations by up t
 ## 多级存储结构，对推理系统的需求
 
 - 支持高速的卡间互联：embedding table 的多GPU 切片分布式存储，在进行embedding table 查找和更新等操作时，需要跨卡进行操作，因此，在硬件层面需要有高速的卡间互联，但这部分数据量不会太大，主要是对软件层面的抽象，以及数据操作需要做到高速，不成为整个pipeline 的瓶颈；
-- 对高速DPU的需求：支持高速的存储和服务器互联（冷存储冷数据到中心服务器的数据高速通信），参数服务器（Parameter server）通常是冷数据，需要动态的加载到中心服务器ssd（对于HugeCTR 来说），这部分大数据量的通信对服务器和存储服务器的通信有较高通信要求，目前Nvidia 提供了DPU 方案，支持GPU和DPU 直接通信，DPU间直接访问remote ssd memory。![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/0da19375fdc54d648352ba993f3c0506.png)
+- 对高速DPU的需求：支持高速的存储和服务器互联（冷存储冷数据到中心服务器的数据高速通信），参数服务器（Parameter server）通常是冷数据，需要动态的加载到中心服务器ssd（对于HugeCTR 来说），这部分大数据量的通信对服务器和存储服务器的通信有较高通信要求，目前Nvidia 提供了DPU 方案，支持GPU和DPU 直接通信，DPU间直接访问remote ssd memory。![在这里插入图片描述](img-15.png)
 - 参数服务器（HPS）设计（Hierarchical Parameter Server），重点关注Host2Device 带宽和RemoteHost2Device 带宽；
 	-  Embedding 分级进行存储，HugeCTR中采用PS+HostMem+DeviceMem 的三级存储方式，Device/Host 存储Sparse Embedding 的Hot 部分，remote SSD 存储冷数据，需要时分级加载到热存储区域；
 
