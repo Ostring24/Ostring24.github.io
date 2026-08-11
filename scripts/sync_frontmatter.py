@@ -92,7 +92,17 @@ def is_prose(line: str) -> bool:
     return len(strip_markdown(s)) >= 12
 
 
+HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
+CODE_FENCE_RE = re.compile(r"^```.*?^```", re.DOTALL | re.MULTILINE)
+
+
 def make_summary(body: str) -> str | None:
+    # Drop HTML comments and fenced code first. The new-post template puts its
+    # instructions in a comment, and without this the first "paragraph" found
+    # was the template's own help text.
+    body = HTML_COMMENT_RE.sub("", body)
+    body = CODE_FENCE_RE.sub("", body)
+
     for raw_line in body.split("\n"):
         if not is_prose(raw_line):
             continue
@@ -142,7 +152,30 @@ def split_front_matter(text: str) -> tuple[str | None, str]:
 
 
 def has_key(front: str, key: str) -> bool:
-    return re.search(rf"^{key}\s*:", front, re.MULTILINE) is not None
+    """True only if the key is present AND carries a real value.
+
+    `new-post.sh` seeds `summary: ""` and `tags: []` as prompts. Treating a
+    present-but-empty key as filled would mean those placeholders could never
+    be auto-completed — which is the whole point of this script.
+    """
+    m = re.search(rf"^{key}\s*:(.*)$", front, re.MULTILINE)
+    if not m:
+        return False
+    value = m.group(1).strip()
+    return value not in ("", '""', "''", "[]", "~", "null")
+
+
+def set_field(front: str, key: str, rendered: str) -> str:
+    """Write `key` into the front matter.
+
+    Replaces the line in place when the key is already there but empty (the
+    `summary: ""` placeholder new-post.sh writes); appends otherwise. Appending
+    blindly would leave two `summary:` lines and an invalid document.
+    """
+    pattern = re.compile(rf"^{key}\s*:.*$", re.MULTILINE)
+    if pattern.search(front):
+        return pattern.sub(rendered, front, count=1)
+    return front + "\n" + rendered
 
 
 def process(path: Path, apply: bool = True) -> list[str]:
@@ -158,7 +191,7 @@ def process(path: Path, apply: bool = True) -> list[str]:
 
     if not has_key(front, "title"):
         if h1_text:
-            front += f"\ntitle: {yaml_quote(h1_text)}"
+            front = set_field(front, "title", f"title: {yaml_quote(h1_text)}")
             added.append("title")
             body = body[: h1_match.start()] + body[h1_match.end():]
             body = body.lstrip("\n")
@@ -177,25 +210,25 @@ def process(path: Path, apply: bool = True) -> list[str]:
     # -- date ----------------------------------------------------------------
     if not has_key(front, "date"):
         d = git_date(path, first=True) or datetime.now(TZ).isoformat(timespec="seconds")
-        front += f"\ndate: {d}"
+        front = set_field(front, "date", f"date: {d}")
         added.append("date")
 
     if not has_key(front, "lastmod"):
         d = git_date(path, first=False)
         if d:
-            front += f"\nlastmod: {d}"
+            front = set_field(front, "lastmod", f"lastmod: {d}")
             added.append("lastmod")
 
     # -- summary -------------------------------------------------------------
     if not has_key(front, "summary") and not has_key(front, "description"):
         s = make_summary(body)
         if s:
-            front += f"\nsummary: {yaml_quote(s)}"
+            front = set_field(front, "summary", f"summary: {yaml_quote(s)}")
             added.append("summary")
 
     # -- draft ---------------------------------------------------------------
     if not has_key(front, "draft"):
-        front += "\ndraft: false"
+        front = set_field(front, "draft", "draft: false")
         added.append("draft")
 
     if not added:

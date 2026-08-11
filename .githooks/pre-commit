@@ -1,0 +1,56 @@
+#!/usr/bin/env bash
+#
+# Fill in missing front matter before the commit lands, so a post can never
+# be committed without a title or date. This is the safety net that makes
+# hand-writing front matter optional.
+#
+# Enable once:  make install-hooks
+# Bypass once:  git commit --no-verify
+#
+# Portability: macOS ships bash 3.2, which has no `mapfile` and no
+# `readarray`. Everything here sticks to POSIX-compatible constructs.
+
+set -eu
+
+repo_root=$(git rev-parse --show-toplevel)
+cd "$repo_root"
+
+# Staged markdown under content/, NUL-delimited so paths with spaces survive.
+staged=$(git diff --cached --name-only --diff-filter=ACM -z -- 'content/**/*.md' 'content/*.md' \
+         | tr '\0' '\n' | grep -v '^$' || true)
+
+[ -z "$staged" ] && exit 0
+
+# Keep only paths that still exist (a rename can stage a vanished path).
+existing=""
+while IFS= read -r f; do
+  [ -n "$f" ] && [ -f "$f" ] && existing="${existing}${f}
+"
+done <<EOF
+$staged
+EOF
+
+[ -z "$existing" ] && exit 0
+
+# shellcheck disable=SC2086
+echo "$existing" | grep -v '^$' | tr '\n' '\0' \
+  | xargs -0 python3 scripts/sync_frontmatter.py >/dev/null
+
+# Re-stage whatever sync touched, so the filled-in front matter is part of
+# this commit rather than an unstaged leftover.
+changed=0
+while IFS= read -r f; do
+  [ -z "$f" ] && continue
+  if ! git diff --quiet -- "$f" 2>/dev/null; then
+    git add "$f"
+    changed=1
+  fi
+done <<EOF
+$existing
+EOF
+
+if [ "$changed" = 1 ]; then
+  echo "pre-commit: filled in missing front matter"
+fi
+
+exit 0
