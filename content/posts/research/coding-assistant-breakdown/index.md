@@ -3,7 +3,6 @@ title: "Coding Agent 大变局"
 date: 2026-04-25T10:30:00+08:00
 draft: false
 tags: ["LLM", "Coding Agent", "OpenAI", "Anthropic", "DeepSeek", "投资"]
-author: "Ostring"
 lastmod: 2026-08-11T15:40:32+08:00
 summary: "自 2026 年初 Anthropic 发布 Claude Code 以来，编程智能体（Agentic Coding）的市场格局正以周为单位发生剧变。"
 aliases: ["/posts/invest/ai_agents/the-coding-assistant-breakdown/"]

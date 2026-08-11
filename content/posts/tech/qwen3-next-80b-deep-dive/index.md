@@ -2,7 +2,7 @@
 title: "Qwen3-next 模型DeepDive"
 date: 2026-08-11T15:40:32+08:00
 lastmod: 2026-08-11T15:40:32+08:00
-summary: "Qwen3NextModel("
+summary: "拆解 Qwen3-Next-80B-A3B 的混合架构：Gated DeltaNet 线性注意力与标准注意力交替、MoE 稀疏层，以及 solve_tril 三角求逆算子的分层实现。"
 draft: false
 aliases: ["/posts/model/qwen3_next_80b_a3b_deepdive/"]
 tags: ["Qwen", "MoE", "模型结构", "推理优化"]

@@ -3,16 +3,16 @@ title: "AI 算力爆发下的互联革命：CPO 技术全解析"
 date: 2026-04-11T10:00:00+08:00
 tags: ["CPO", "光网络", "AI 基础设施", "硅光"]
 lastmod: 2026-04-16T17:01:58+08:00
-summary: "随着 AI 基础设施（[[ai-infrastructure]]）的快速扩张，数据中心对带宽和功耗的要求达到了前所未有的高度。"
+summary: "随着 AI 基础设施（ai infrastructure）的快速扩张，数据中心对带宽和功耗的要求达到了前所未有的高度。"
 draft: false
 aliases: ["/posts/data_center/2026_0411_cpo_market_analysis/"]
 ---
 
-随着 AI 基础设施（[[ai-infrastructure]]）的快速扩张，数据中心对带宽和功耗的要求达到了前所未有的高度。传统的插拔式光模块正逐渐触及物理极限，而 **CPO (Co-Packaged Optics，共封装光学)** 正在成为行业公认的破局点。
+随着 AI 基础设施（ai infrastructure）的快速扩张，数据中心对带宽和功耗的要求达到了前所未有的高度。传统的插拔式光模块正逐渐触及物理极限，而 **CPO (Co-Packaged Optics，共封装光学)** 正在成为行业公认的破局点。
 
 ## 什么是 CPO？
 
-CPO 是一种先进封装技术，它将基于硅光（[[silicon-photonics]]）的“光引擎”直接集成在交换机 ASIC 或 AI 加速器（xPU）的基板上。通过缩短电信号的传输距离（从几十厘米缩短到几毫米），CPO 彻底消除了对 PCB 铜线的依赖。
+CPO 是一种先进封装技术，它将基于硅光（silicon photonics）的“光引擎”直接集成在交换机 ASIC 或 AI 加速器（xPU）的基板上。通过缩短电信号的传输距离（从几十厘米缩短到几毫米），CPO 彻底消除了对 PCB 铜线的依赖。
 
 ![CPO 典型架构：ELS、FAU 与光引擎的协同](architecture.png)
 
@@ -39,14 +39,14 @@ CPO 是一种先进封装技术，它将基于硅光（[[silicon-photonics]]）�
 
 ## 产业链关键玩家
 
-- **核心芯片/方案**：[[broadcom]]、[[nvidia]]、[[marvell]]。
-- **制造与封装**：[[tsmc]]（COUPE 平台）、[[ase]]、[[besi]]（混合键合）。
-- **光组件供应商**：[[foci]]（FAU 关键供应商）、[[lumentum]] 与 [[coherent]]（CW 激光源）。
-- **载板**：[[ibiden]]（由于布线复杂，CPO 载板价值量有望翻倍）。
+- **核心芯片/方案**：broadcom、nvidia、marvell。
+- **制造与封装**：tsmc（COUPE 平台）、ase、besi（混合键合）。
+- **光组件供应商**：foci（FAU 关键供应商）、lumentum 与 coherent（CW 激光源）。
+- **载板**：ibiden（由于布线复杂，CPO 载板价值量有望翻倍）。
 
 ## 总结
 
 CPO 不仅仅是一项封装技术的升级，它是对数据中心互联架构的一次重构。随着 1.6T 时代的临近，从“插拔”转向“共封装”已是大势所趋。
 
 ---
-*本文基于 [[co-packaged-optics]]、[[silicon-photonics]] 及 [[external-laser-source]] 等知识库内容编写。*
+*本文基于 co packaged optics、silicon photonics 及 external laser source 等知识库内容编写。*
