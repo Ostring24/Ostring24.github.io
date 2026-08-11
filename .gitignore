@@ -1,4 +1,9 @@
+# Hugo build output. The site is built and deployed by GitHub Actions
+# (.github/workflows/hugo.yml), so nothing generated belongs in the repo.
 public
 resources
+docs
 .hugo_build.lock
+
+# macOS
 .DS_Store
