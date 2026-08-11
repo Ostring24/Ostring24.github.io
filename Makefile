@@ -45,16 +45,37 @@ build: sync
 	@echo "built -> public/"
 
 # sync first so a post written in a hurry still ships with complete metadata.
+#
+# The whole body is ONE shell invocation (trailing backslashes). Make runs each
+# recipe line in a separate shell, so an `exit 0` on its own line only ends that
+# line — the rest of the target still runs. That bug made an empty publish fall
+# through to `git commit` and fail on a clean tree.
 publish: sync
-	@if git diff --quiet && git diff --cached --quiet; then \
-		echo "nothing to publish"; exit 0; \
+	@set -e; \
+	branch=$$(git rev-parse --abbrev-ref HEAD); \
+	if git diff --quiet && git diff --cached --quiet && \
+	   [ -z "$$(git ls-files --others --exclude-standard)" ]; then \
+		echo "nothing to commit — working tree is clean"; \
+	else \
+		git add -A; \
+		git commit -m "$${M:-post: update content}"; \
+	fi; \
+	if [ -z "$$(git log origin/$$branch..$$branch 2>/dev/null)" ] && \
+	   git rev-parse --verify --quiet origin/$$branch >/dev/null; then \
+		echo "nothing new to push — $$branch matches origin"; \
+	else \
+		git push -u origin "$$branch"; \
+	fi; \
+	if [ "$$branch" != "main" ]; then \
+		echo ""; \
+		echo "NOTE: you are on '$$branch', not main."; \
+		echo "      Deploys only trigger on pushes to main, so the live site"; \
+		echo "      will not change until this branch is merged."; \
+	else \
+		echo ""; \
+		echo "pushed. GitHub Actions is building:"; \
+		echo "  https://github.com/Ostring24/ostring.github.io/actions"; \
 	fi
-	@git add -A
-	@git commit -m "$${M:-post: update content}"
-	@git push
-	@echo ""
-	@echo "pushed. GitHub Actions is building:"
-	@echo "  https://github.com/Ostring24/ostring.github.io/actions"
 
 install-hooks:
 	@git config core.hooksPath .githooks
