@@ -1,5 +1,5 @@
 ---
-title: "Coding Agent 大变局：别再只盯着 Token 价格，任务效率才是真正的“北极星”"
+title: "Coding Agent 大变局”"
 date: 2026-04-25T10:30:00+08:00
 draft: false
 tags: ["AI", "LLM", "Coding Agents", "OpenAI", "Anthropic", "DeepSeek", "Invest"]
@@ -13,7 +13,7 @@ author: "Ostring"
 
 ### 告别“Token 经济学”：效率才是真金白银
 
-长期以来，开发者和投资者习惯于通过每百万 Token 的价格来衡量模型成本。但随着推理架构的演进，这种线性逻辑正在失效。正如 *SemiAnalysis* 的 *Max Kan* 指出的，**任务效率（Token Efficiency）** 才是决定模型商业价值的“北极星”指标。
+长期以来，开发者和投资者习惯于通过每百万 Token 的价格来衡量模型成本。但随着推理架构的演进，这种线性逻辑正在失效。正如 *SemiAnalysis* 指出的，**任务效率（Token Efficiency）** 才是决定模型商业价值的“北极星”指标。
 
 虽然一些模型单看 Token 价格更贵，但如果它能用更少的推理步数解决同一个复杂的 Bug，其“单次任务成本（Cost per Task）”反而更低。以最新发布的 **GPT-5.5** 为例，尽管其 API 价格较前代翻倍，但在实际的编程 Trace 中，它通过更精准的上下文调取减少了冗余输入。
 
