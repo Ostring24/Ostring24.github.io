@@ -5,6 +5,7 @@ lastmod: 2026-04-09T16:52:17+08:00
 summary: "铜价一路飙升。即使特朗普总统掌握着进一步上涨——或者下跌（如果他放弃关税威胁）——的关键，投资者现在加入也为时不晚。"
 draft: false
 aliases: ["/posts/tech_news/copper_fever/5_Copper_Fever_Is_Here._How_to_Play_It._zh/"]
+tags: ["铜", "大宗商品", "投资"]
 ---
 
 铜价一路飙升。即使特朗普总统掌握着进一步上涨——或者下跌（如果他放弃关税威胁）——的关键，投资者现在加入也为时不晚。

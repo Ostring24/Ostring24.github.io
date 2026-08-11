@@ -5,6 +5,7 @@ lastmod: 2025-05-22T23:26:47+08:00
 summary: "在世界大部分目光都集中在美国和中国之间的人工智能竞赛之际，本周的台北国际电脑展鲜明地提醒人们，台湾在全球科技产业中继续扮演着核心角色。"
 draft: false
 aliases: ["/posts/tech_news/2025_5takeaway_computex/2025_computex_5takeaway/"]
+tags: ["Computex", "台湾", "AI 芯片"]
 ---
 
 ![](./_page_135_Picture_0.jpeg)

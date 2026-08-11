@@ -1,0 +1,227 @@
+/* ---------------------------------------------------------------------------
+   CJK reading typography.
+
+   PaperMod is tuned for English. This site is ~95% long-form Chinese with
+   heavy tables and ASCII diagrams, which needs different line-height,
+   different fallback fonts, and — critically — overflow containment so wide
+   tables and pre blocks scroll inside themselves instead of blowing out the
+   page on mobile.
+
+   Loaded automatically: PaperMod concatenates everything under
+   assets/css/extended/.
+--------------------------------------------------------------------------- */
+
+:root {
+  /* 720px of mixed CJK/Latin runs long. Chinese has no word spaces, so the
+     eye gets less help finding the next line; a slightly narrower column and
+     more leading do most of the work. */
+  --main-width: 46rem;
+  --content-gap: 26px;
+
+  --font-cjk: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+              "Noto Sans CJK SC", "Source Han Sans SC", sans-serif;
+  --font-latin: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                "Helvetica Neue", Arial;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+               "Liberation Mono", monospace;
+}
+
+body {
+  /* Latin first so English words inside Chinese sentences keep proper
+     shapes, then the CJK stack picks up the Han characters. */
+  font-family: var(--font-latin), var(--font-cjk);
+}
+
+/* ------------------------------------------------------------------ prose */
+
+.post-content {
+  font-size: 1.05rem;
+  line-height: 1.85;          /* PaperMod ships ~1.6; too tight for Han */
+  letter-spacing: 0.01em;
+  text-align: justify;
+  text-justify: inter-ideograph;
+  /* Never let a long unbroken token (URL, hash, kernel name) widen the page */
+  overflow-wrap: break-word;
+}
+
+.post-content p {
+  margin: 1.25em 0;
+}
+
+/* Latin headings look thin next to Han glyphs at the same weight. */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  line-height: 1.5;
+  letter-spacing: 0.005em;
+  font-weight: 650;
+}
+
+.post-content h2 {
+  margin-top: 2.2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--border);
+}
+
+.post-content h3 {
+  margin-top: 1.8em;
+}
+
+/* Breathing room between a Han paragraph and an inline-code run. */
+.post-content code {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+  margin: 0 0.15em;
+}
+
+.post-content blockquote {
+  border-inline-start: 3px solid var(--primary);
+  padding: 0.2em 0 0.2em 1.1em;
+  margin: 1.4em 0;
+  color: var(--secondary);
+  font-style: normal;         /* italic Han is a synthesized slant; ugly */
+}
+
+.post-content li {
+  margin-top: 0.4em;
+  line-height: 1.8;
+}
+
+/* ----------------------------------------------------------------- tables */
+/* These posts carry wide comparison tables. Unconstrained they force the
+   whole document to scroll sideways on phones. */
+
+.post-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-size: 0.94rem;
+  line-height: 1.7;
+  -webkit-overflow-scrolling: touch;
+}
+
+.post-content table th,
+.post-content table td {
+  padding: 0.55em 0.9em;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+  /* Let cells stay readable rather than collapsing to one character wide */
+  min-width: 6em;
+}
+
+.post-content table th {
+  background: var(--code-bg);
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.post-content table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--border) 35%, transparent);
+}
+
+/* ------------------------------------------------------- code and ASCII art */
+/* Several posts embed box-drawing diagrams. Wrapping them destroys the
+   alignment, so scroll instead of wrap. */
+
+.post-content pre {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius);
+}
+
+.post-content pre code {
+  white-space: pre;
+  word-break: normal;
+  overflow-wrap: normal;
+  font-size: 0.86rem;
+  line-height: 1.55;
+  tab-size: 4;
+  margin: 0;
+}
+
+/* ----------------------------------------------------------------- images */
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  display: block;
+  margin: 1.6em auto;
+}
+
+.post-content figure > figcaption,
+.post-content img + em {
+  display: block;
+  text-align: center;
+  font-size: 0.86rem;
+  color: var(--secondary);
+  font-style: normal;
+}
+
+/* ------------------------------------------------------------------ lists */
+
+.post-entry {
+  /* Homepage cards: the old site inlined entire articles here. Now that
+     summaries are real, clamp them so every card is the same height. */
+  padding: 22px;
+}
+
+.entry-content {
+  line-height: 1.7;
+  -webkit-line-clamp: 3;
+}
+
+.entry-hint {
+  color: var(--secondary);
+}
+
+/* Section landing pages read as intro copy, not as a post. */
+.page-header .post-description {
+  line-height: 1.8;
+  margin-top: 0.6em;
+}
+
+/* -------------------------------------------------------------------- toc */
+
+.toc {
+  line-height: 1.7;
+  font-size: 0.94rem;
+}
+
+.toc details summary {
+  cursor: pointer;
+}
+
+.toc li {
+  margin: 0.2em 0;
+}
+
+/* ---------------------------------------------------------------- mobile */
+
+@media screen and (max-width: 768px) {
+  .post-content {
+    font-size: 1.02rem;
+    line-height: 1.8;
+    /* Justified text with no hyphenation gets rivers on narrow screens. */
+    text-align: start;
+  }
+
+  .post-content table {
+    font-size: 0.88rem;
+  }
+
+  .post-content pre code {
+    font-size: 0.8rem;
+  }
+}
+
+/* Respect users who ask for less motion. */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -2,7 +2,7 @@
 title: "沉默的镜面：为什么 OCS 是 AI 集群规模爆发的隐形引擎？"
 date: 2026-04-14T19:51:00+08:00
 draft: false
-tags: ["AI 基础设施", "OCS", "光学网络", "Google", "供应链"]
+tags: ["AI 基础设施", "OCS", "光网络", "Google", "供应链"]
 author: "Ostring"
 lastmod: 2026-04-16T17:01:58+08:00
 summary: "在训练万亿参数模型的军备竞赛中，人们往往将目光聚焦在算力本身——谁能抢到更多的 Nvidia H100 或 Google TPU。"

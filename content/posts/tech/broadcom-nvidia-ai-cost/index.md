@@ -5,6 +5,7 @@ lastmod: 2026-04-09T16:52:17+08:00
 summary: "博通已成为仅次于英伟达的第二大AI芯片制造商。— Dreamstime By Adam Clark July 11, 2025"
 draft: false
 aliases: ["/posts/tech_news/broadcomm_nvidia_compete/15_Big_Tech_Needs_a_Way_Out_of_Its_AI_Cost_Spiral._Th_zh/"]
+tags: ["Broadcom", "NVIDIA", "AI 成本", "投资"]
 ---
 
 *亚马逊、谷歌、微软和Meta希望定制芯片能够减缓它们在AI方面的支出速度。芯片设计商博通和Marvell Technology由此应运而生。*

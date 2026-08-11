@@ -5,6 +5,7 @@ lastmod: 2025-11-28T12:22:55+08:00
 summary: "2025年被科技界广泛称为“智能体元年”（The Year of Agents）。OpenAI发布了可以像人类一样操作浏览器的‘Operator’，以及能自主完成软件工程任务的‘C…"
 draft: false
 aliases: ["/posts/invest/ai_agents/NBER_agent_suvery/"]
+tags: ["Agent", "经济影响", "研究报告"]
 ---
 
  2025年被科技界广泛称为“智能体元年”（The Year of Agents）。OpenAI发布了可以像人类一样操作浏览器的‘Operator’，以及能自主完成软件工程任务的‘Codex’ 。

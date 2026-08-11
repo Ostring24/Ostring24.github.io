@@ -5,6 +5,7 @@ lastmod: 2026-04-09T16:52:17+08:00
 summary: "当前Vision Pro搭载的M2芯片（2022年发布）已被供应链戏称为「古董」。第二代将直接跳级采用iPad Pro同款M4处理器，神经引擎核心数可能突破16核（现款为16核）。"
 draft: false
 aliases: ["/posts/tech_news/vision_pro2_latest/"]
+tags: ["Apple", "Vision Pro", "空间计算"]
 ---
 
 ![](2025-07-10-09-28-50.png)

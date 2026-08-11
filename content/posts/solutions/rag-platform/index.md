@@ -4,6 +4,7 @@ date: 2025-11-28T12:22:55+08:00
 lastmod: 2025-11-28T12:22:55+08:00
 draft: false
 aliases: ["/posts/solution/rag/"]
+tags: ["RAG", "平台架构"]
 ---
 
 | 工具/平台                  | 数据源集成        | 分块策略             | 向量库适配                       | 多轮问答 | 插件/Agent 调用                | UI 管理       |

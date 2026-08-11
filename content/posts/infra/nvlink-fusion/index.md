@@ -5,6 +5,7 @@ lastmod: 2025-05-29T09:57:25+08:00
 summary: "Jenson Huang 今天抛出了绣球，接下来第一个问题：其他厂商家的黄花闺女能否看的上。"
 draft: false
 aliases: ["/posts/data_center/nvidia_fusion/nvdia_fusion/"]
+tags: ["NVIDIA", "NVLink", "互连", "AI 基础设施"]
 ---
 
 Jenson Huang 今天抛出了绣球，接下来第一个问题：其他厂商家的黄花闺女能否看的上。

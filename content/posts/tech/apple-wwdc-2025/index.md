@@ -5,6 +5,7 @@ lastmod: 2025-06-12T10:09:23+08:00
 summary: "马上苹果公司将于太平洋时间周一上午10点开始的主题演讲将介绍iPhone、iPad、Mac、Apple TV和Apple Watch的重新设计的[软件界面]，以及对Vision P…"
 draft: false
 aliases: ["/posts/tech_news/apple_wwdc2025/16_Everything_Apple_Plans_to_Show_at_Its_iOS_26-Focus_zh/"]
+tags: ["Apple", "WWDC"]
 ---
 
 ![](_page_183_Picture_3.jpeg)

@@ -1,7 +1,7 @@
 ---
 title: "CPO and UBS Analysis"
 date: 2026-04-10T13:15:00+08:00
-tags: ["CPO", "UBS", "Analysis"]
+tags: ["CPO", "UBS"]
 lastmod: 2026-04-16T17:01:58+08:00
 summary: "Content to be added once the PDF extraction is complete."
 draft: false

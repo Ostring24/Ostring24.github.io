@@ -5,6 +5,7 @@ lastmod: 2026-08-11T15:40:32+08:00
 summary: "Qwen3NextModel("
 draft: false
 aliases: ["/posts/model/qwen3_next_80b_a3b_deepdive/"]
+tags: ["Qwen", "MoE", "模型结构", "推理优化"]
 ---
 
 # model 结构

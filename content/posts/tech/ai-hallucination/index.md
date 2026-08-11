@@ -5,6 +5,7 @@ lastmod: 2025-05-29T09:57:25+08:00
 summary: "Agent最近势头正兴，但似乎所有人已经把model 当成一个可靠的Agent/助手来使用，最终呈现效果挺惊艳，惊艳的外表下，很少看到其生成内容准确性的评估，人类都是视觉动物，更关…"
 draft: false
 aliases: ["/posts/tech_news/AI_illumination/A_illumination/"]
+tags: ["幻觉", "LLM", "Agent"]
 ---
 
 image.png

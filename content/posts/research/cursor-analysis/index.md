@@ -5,6 +5,7 @@ lastmod: 2025-11-28T12:22:55+08:00
 summary: "Cursor 的 B 轮融资中，Thrive Capital、Andreessen Horowitz、Benchmark 等顶级风投机构参与了投资"
 draft: false
 aliases: ["/posts/invest/cursor/cursor_analysis/"]
+tags: ["Cursor", "Coding Agent", "投资"]
 ---
 
 Cursor 的 B 轮融资中，Thrive Capital、Andreessen Horowitz、Benchmark 等顶级风投机构参与了投资

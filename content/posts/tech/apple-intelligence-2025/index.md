@@ -5,6 +5,7 @@ lastmod: 2025-06-12T10:09:23+08:00
 summary: "2024年9月的苹果iPhone 16发布会上了解更多信息。苹果在发布会上宣传了即将推向其设备的一系列AI功能，包括Apple Watch Series 10 的翻译功能、iPho…"
 draft: false
 aliases: ["/posts/tech_news/apple_intellegence_2025/apple_intellegence/"]
+tags: ["Apple", "端侧 AI"]
 ---
 
 ![](./_page_13_Picture_0.jpeg)

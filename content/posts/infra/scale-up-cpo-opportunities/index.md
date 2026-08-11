@@ -2,7 +2,7 @@
 title: "从 Copper 到 CPO：AI 集群 Scale-up 的下半场机会"
 date: 2026-04-13T23:00:00+08:00
 draft: false
-tags: ["AI", "Semiconductor", "CPO", "Nvidia", "TSMC"]
+tags: ["Semiconductor", "CPO", "NVIDIA", "TSMC"]
 lastmod: 2026-04-16T17:01:58+08:00
 summary: "在 AI 算力竞赛的牌局中，如果说过去两年大家的目光都盯着 Nvidia 的 GPU 产能，那么未来的焦点正在悄然向“互联”转移。"
 aliases: ["/posts/scale-up-cpo-opportunities/"]

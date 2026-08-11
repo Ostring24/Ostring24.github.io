@@ -5,6 +5,7 @@ lastmod: 2025-11-28T12:22:55+08:00
 summary: "OpenAI 最近推出了 GPT-3 Pro，这是他们迄今为止最强大的 AI 模型。"
 draft: false
 aliases: ["/posts/tech_news/openai_gpto3pro/gpto3_pro/"]
+tags: ["OpenAI", "推理模型"]
 ---
 
 OpenAI 最近推出了 GPT-3 Pro，这是他们迄今为止最强大的 AI 模型。

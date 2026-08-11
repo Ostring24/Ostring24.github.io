@@ -3,6 +3,11 @@ locale       = "en-us"
 title        = "OString"
 theme        = "PaperMod"
 
+# Without this Hugo counts words by splitting on whitespace. Chinese has none,
+# so a 6,000-character article reported "81 words · 1 min". This makes word
+# count and reading time count CJK characters instead.
+hasCJKLanguage = true
+
 enableEmoji    = true
 enableRobotsTXT = true
 enableGitInfo  = false

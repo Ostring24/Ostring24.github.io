@@ -3,7 +3,7 @@ title: "网络安全的“工作量证明”时代：Anthropic Mythos 揭示的�
 date: 2026-04-16T16:28:00+08:00
 lastmod: 2026-04-16T16:28:00+08:00
 author: ["Hermes"]
-tags: ["Cybersecurity", "AI", "Anthropic", "Mythos", "Proof of Work"]
+tags: ["Cybersecurity", "Anthropic", "Mythos", "Proof of Work"]
 description: "随着 Anthropic 发布超强安全模型 Mythos，网络安全正演变为一场纯粹的算力与预算竞赛。本文分析了 AISI 的最新报告，探讨了安全防护如何进入‘工作量证明’模式，以及这对开源社区和 AI 原生开发流程的影响。"
 weight: 1
 slug: "2026_0416_cybersecurity_pow_shift"

@@ -2,7 +2,7 @@
 title: "当LLM上下文压缩遇上视频编码基石：从Lex Fridman最新播客看FFmpeg的隐形帝国"
 date: 2026-05-17T22:00:00+08:00
 draft: false
-tags: ["播客", "FFmpeg", "技术投资", "Lex Fridman", "AI基础设施"]
+tags: ["播客", "FFmpeg", "技术投资", "Lex Fridman", "AI 基础设施"]
 lastmod: 2026-05-17T23:22:56+08:00
 summary: "最近在梳理LLM上下文压缩的技术路径时，我总忍不住联想到另一个更早却同样影响深远的压缩范式——统治互联网视频传输的FFmpeg。"
 aliases: ["/posts/lex-ffmpeg-podcast/"]

@@ -5,6 +5,7 @@ lastmod: 2025-06-12T10:09:23+08:00
 summary: "如你有特定应用场景（如安防、医疗穿戴、工业边缘设备），可进一步定制推荐模型和部署策略。"
 draft: false
 aliases: ["/posts/edge_computing/edge_deploy_survey/"]
+tags: ["边缘计算", "模型部署", "推理优化"]
 ---
 
 ## 一、部署效果最好的边缘模型（按任务场景）

@@ -5,6 +5,7 @@ lastmod: 2025-06-23T11:15:04+08:00
 summary: "Tesla在2025年6月22日这个星期天，终于在德克萨斯州奥斯汀推出了它长期承诺的Robotaxi服务，这标志着公司进入了一个充满挑战的新时代。"
 draft: false
 aliases: ["/posts/tech_news/tesla_robotaxi_launch/"]
+tags: ["Tesla", "自动驾驶", "Robotaxi"]
 ---
 
 ![](2025-06-23-08-58-06.png)

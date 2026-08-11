@@ -5,6 +5,7 @@ lastmod: 2025-06-12T10:09:23+08:00
 summary: "DeepSeek 又更新了，0528的版本在代码生成和幻觉消除方面有了比较大的提升："
 draft: false
 aliases: ["/posts/tech_news/2025_0530_deepseek_newupdate/"]
+tags: ["DeepSeek", "国产芯片", "大模型"]
 ---
 
 DeepSeek 又更新了，0528的版本在代码生成和幻觉消除方面有了比较大的提升：

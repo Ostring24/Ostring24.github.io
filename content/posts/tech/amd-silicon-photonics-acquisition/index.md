@@ -5,6 +5,7 @@ lastmod: 2025-05-29T09:57:25+08:00
 summary: "AMD 已收购 Enosemi，这是一家设计定制材料以支持硅光子产品开发的初创公司。该交易于周三宣布，具体条款未披露。"
 draft: false
 aliases: ["/posts/tech_news/amd_buy_silicon_photonic_startup/"]
+tags: ["AMD", "硅光", "并购"]
 ---
 
 ![](2025-05-29-09-16-40.png)

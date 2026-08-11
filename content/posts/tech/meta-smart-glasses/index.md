@@ -5,6 +5,7 @@ lastmod: 2026-04-09T16:52:17+08:00
 summary: "交易本质：不是财务投资，而是战略夺权"
 draft: false
 aliases: ["/posts/tech_news/meta_invest_EssilorLuxottica_smartglass/"]
+tags: ["Meta", "智能眼镜", "并购"]
 ---
 
 ![](2025-07-10-13-37-12.png)

@@ -5,6 +5,7 @@ lastmod: 2025-06-17T14:37:45+08:00
 summary: "微信公众号 Ostring24"
 draft: false
 aliases: ["/posts/solution/search_recommendation_adv/"]
+tags: ["搜广推", "推荐系统", "系统设计"]
 ---
 
 微信公众号 Ostring24

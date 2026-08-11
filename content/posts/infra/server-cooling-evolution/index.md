@@ -5,6 +5,7 @@ lastmod: 2025-05-22T23:26:47+08:00
 summary: "最近在关注美股，围观行业大佬分析NV 供应链体系，注意到一家公司VRT， 这家公司是NV 的独家液冷方案提供商。"
 draft: false
 aliases: ["/posts/data_center/server_cooling_evolution/server_cooling_evolution/"]
+tags: ["液冷", "数据中心", "散热", "供应链"]
 ---
 
 ﻿

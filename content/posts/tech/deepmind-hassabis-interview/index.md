@@ -5,6 +5,7 @@ lastmod: 2025-05-29T09:57:25+08:00
 summary: "原文作者作者：凯文·罗斯和凯西·牛顿"
 draft: false
 aliases: ["/posts/tech_news/google_deepmind_hassabis/3_The_Man_Who_A_G_I_-Pilled_Google_zh/"]
+tags: ["Google", "DeepMind", "AGI"]
 ---
 
 原文作者**作者：凯文·罗斯和凯西·牛顿** 
