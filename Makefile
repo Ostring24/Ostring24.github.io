@@ -74,7 +74,7 @@ publish: sync
 	else \
 		echo ""; \
 		echo "pushed. GitHub Actions is building:"; \
-		echo "  https://github.com/Ostring24/ostring.github.io/actions"; \
+		echo "  https://github.com/Ostring24/Ostring24.github.io/actions"; \
 	fi
 
 install-hooks:

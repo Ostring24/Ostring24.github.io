@@ -124,7 +124,7 @@ build:
 
 **这个 GitHub 仓库是公开的。** `private: true` 只是让文章不出现在网站上，
 文件本身仍然可以被任何人在
-`github.com/Ostring24/ostring.github.io` 里读到。
+`github.com/Ostring24/Ostring24.github.io` 里读到。
 
 真正需要保密的内容，选一种：
 
@@ -256,7 +256,7 @@ Hugo 0.145 起改名为 `build`。跑 `make sync` 会自动把 `_build:` 改成 
 `date` 一旦写进文件就固定了。想改直接改 front matter，脚本不会覆盖。
 
 **部署没反应**
-1. 看 [Actions](https://github.com/Ostring24/ostring.github.io/actions)
+1. 看 [Actions](https://github.com/Ostring24/Ostring24.github.io/actions)
 2. 构建前会跑 `make check`，缺 front matter 会直接失败——本地先跑 `make check`
 3. 只有推到 `main` 分支才会部署
 
@@ -268,8 +268,8 @@ Hugo 0.145 起改名为 `build`。跑 `make sync` 会自动把 `_build:` 改成 
 ## 新机器上 clone 之后
 
 ```bash
-git clone --recurse-submodules git@github.com:Ostring24/ostring.github.io.git
-cd ostring.github.io
+git clone --recurse-submodules git@github.com:Ostring24/Ostring24.github.io.git
+cd Ostring24.github.io
 make install-hooks
 brew install hugo          # 需要 extended 版本
 make serve

@@ -88,7 +88,7 @@ tags: []
   then set draft: false.
 
   WARNING: the GitHub repo is public, so this file is still readable at
-  github.com/Ostring24/ostring.github.io. This hides the post from the
+  github.com/Ostring24/Ostring24.github.io. This hides the post from the
   site, not from the internet.
 -->
 
