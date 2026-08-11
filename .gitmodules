@@ -1,6 +1,4 @@
-[submodule "themes/typo"]
-	path = themes/typo
-	url = https://github.com/tomfran/typo.git
-[submodule "themes/anatole"]
-	path = themes/anatole
-	url = https://github.com/lxndrblz/anatole
+[submodule "themes/PaperMod"]
+	path = themes/PaperMod
+	url = https://github.com/adityatelange/hugo-PaperMod.git
+	shallow = true

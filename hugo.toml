@@ -1,78 +1,148 @@
-baseURL = "https://ostring.github.io"
-languageCode = "en"
-DefaultContentLanguage = "en"
-title = "Website of OString"
-publishDir = "docs"
+baseURL      = "https://ostring24.github.io/"
+locale       = "en-us"
+title        = "OString"
+theme        = "PaperMod"
 
-# theme as hugo module
-# theme = "github.com/lxndrblz/anatole"
-# theme as git submodule
-theme = "anatole"
+enableEmoji    = true
+enableRobotsTXT = true
+enableGitInfo  = false
+buildDrafts    = false
+buildFuture    = false
+buildExpired   = false
 
+[pagination]
+  pagerSize = 10
+
+# ---------------------------------------------------------------- params
 [params]
-author = "OString"
-description = "Welcome to OString's Website"
-profilePicture = "images/profile.jpg"
+  env         = "production"   # enables SEO / OpenGraph / JSON-LD output
+  author      = "OString"
+  title       = "OString"
+  description = "Notes on AI infrastructure, optical interconnect, semiconductors and the companies building them."
+  keywords    = ["AI Infrastructure", "Data Center", "CPO", "Silicon Photonics", "LLM", "Semiconductors"]
+  DateFormat  = "2006-01-02"
 
+  # Only content under content/posts/ feeds the homepage stream.
+  mainSections = ["posts"]
+
+  defaultTheme       = "auto"
+  ShowReadingTime    = true
+  ShowWordCount      = true
+  ShowToc            = true
+  TocOpen            = false
+  ShowBreadCrumbs    = true
+  ShowPostNavLinks   = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowFullTextinRSS  = false
+  hideFooter         = false
+  disableScrollToTop = false
+  # Long-form technical writing: show the summary, not the whole article.
+  # (The old site inlined every post on the homepage.)
+  ShowPageNums       = true
+
+  [params.homeInfoParams]
+    Title   = "OString"
+    Content = """
+Notes on AI infrastructure and the hardware underneath it — optical interconnect, CPO,
+data-center design, model internals, and the companies whose numbers depend on all of it.
+
+Mostly written in Chinese. Start with [Infrastructure](/posts/infra/) or browse the
+[archive](/archives/).
+"""
+
+  [params.assets]
+    disableFingerprinting = false
+    favicon               = "/favicon.ico"
+
+  [params.cover]
+    linkFullImages = true
+    responsiveImages = true
+
+  # Site search (Fuse.js) — tuned for CJK, where the default
+  # token separator never matches.
+  [params.fuseOpts]
+    isCaseSensitive   = false
+    shouldSort        = true
+    location          = 0
+    distance          = 1000
+    threshold         = 0.4
+    minMatchCharLength = 1
+    ignoreLocation    = true
+    keys              = ["title", "permalink", "summary", "content"]
+
+# ---------------------------------------------------------------- menu
 [menu]
   [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
+    identifier = "infra"
+    name       = "Infrastructure"
+    url        = "/posts/infra/"
+    weight     = 10
   [[menu.main]]
-    name = "DataCenter"
-    url = "/posts/data_center/"
-    weight = 2
+    identifier = "tech"
+    name       = "Tech Watch"
+    url        = "/posts/tech/"
+    weight     = 20
   [[menu.main]]
-    name = "TechNews"
-    url = "/posts/tech_news/"
-    weight = 3
+    identifier = "research"
+    name       = "Research"
+    url        = "/posts/research/"
+    weight     = 30
   [[menu.main]]
-    name = "About"
-    url = "/about/"
-    weight = 4
+    identifier = "solutions"
+    name       = "Solutions"
+    url        = "/posts/solutions/"
+    weight     = 40
+  [[menu.main]]
+    identifier = "archives"
+    name       = "Archive"
+    url        = "/archives/"
+    weight     = 50
+  [[menu.main]]
+    identifier = "tags"
+    name       = "Tags"
+    url        = "/tags/"
+    weight     = 60
+  [[menu.main]]
+    identifier = "search"
+    name       = "Search"
+    url        = "/search/"
+    weight     = 70
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about/"
+    weight     = 80
 
-summarylength = 10
-enableEmoji = true
-enableRobotsTXT = true
-
-[frontmatter]
-  title = ["title", "h1"]  # Use front matter title first, then h1 title
-  date = ["date", ":fileModTime"]  # Use file modification time as date
-
-# Syntax highlighting
-pygmentsUseClasses = true   
-pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
-
-# Localized dates requires Hugo version 0.87.0
-localizedDates = false
-
-[markup]
-    [markup.goldmark]
-        [markup.goldmark.renderer]
-        unsafe=true
+# ---------------------------------------------------------------- output
+# JSON on the home page is the search index Fuse.js reads.
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [taxonomies]
-    category = "categories"
-    series = "series"
-    tag = "tags"
+  category = "categories"
+  tag      = "tags"
 
-[related]
-  includeNewer = true
-  threshold = 80
-  toLower = true
-[[related.indices]]
-  name = 'keywords'
-  weight = 100
-[[related.indices]]
-  name = 'tags'
-  weight = 80
+# ---------------------------------------------------------------- markup
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true          # posts contain inline HTML
+  [markup.goldmark.extensions]
+    [markup.goldmark.extensions.passthrough]
+      enable = true
+      [markup.goldmark.extensions.passthrough.delimiters]
+        block  = [['\[', '\]'], ['$$', '$$']]
+        inline = [['\(', '\)']]
+  [markup.highlight]
+    noClasses      = false   # use PaperMod's theme-aware Chroma stylesheet
+    codeFences     = true
+    guessSyntax    = true
+    lineNos        = false
+    tabWidth       = 4
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel   = 3
+    ordered    = false
 
-[services]
-# Enable Disqus.Disqus.Shortname
-  [services.disqus]
-    #shortname = 'your-disqus-shortname'
-# Google Analytics
-  [services.googleAnalytics]
-    #ID = 'G-MEASUREMENT_ID'
+[minify]
+  disableXML = true
