@@ -110,15 +110,15 @@ private: true
 
 ```yaml
 private: true
-_build:
+build:
   list: never
   render: never
 ```
 
-> `private` 不是 Hugo 的内置字段，`_build` 才是。写一行 `private: true` 就够了，
+> `private` 不是 Hugo 的内置字段，`build` 才是。写一行 `private: true` 就够了，
 > 嵌套的 YAML 交给脚本，避免缩进写错导致文章意外上线。
 
-**想改回发布**：删掉 `private: true` 和整个 `_build` 块，再把 `draft` 设成 `false`。
+**想改回发布**：删掉 `private: true` 和整个 `build` 块，再把 `draft` 设成 `false`。
 
 ### ⚠️ 「不发布」不等于「私密」
 
@@ -240,8 +240,12 @@ make install-hooks   # 启用 git hook（每个新 clone 需要跑一次）
 
 **文章不显示**
 1. `draft: true`？线上不显示草稿，`make serve` 才能看到
-2. `date` 是未来时间？`buildFuture = false`，未来日期的文章不会构建
-3. 放在 `content/posts/<栏目>/<slug>/index.md` 了吗？文件名必须是 `index.md`
+2. `private: true`？那是刻意的，连 `make serve` 都不会显示
+3. `date` 是未来时间？`buildFuture = false`，未来日期的文章不会构建
+4. 放在 `content/posts/<栏目>/<slug>/index.md` 了吗？文件名必须是 `index.md`
+
+**构建报错 `The "_build" front matter key was deprecated`**
+Hugo 0.145 起改名为 `build`。跑 `make sync` 会自动把 `_build:` 改成 `build:`。
 
 **图片不显示**
 1. 图片和 `index.md` 在同一个文件夹吗？

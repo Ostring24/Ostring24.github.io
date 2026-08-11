@@ -81,10 +81,10 @@ tags: []
 
 <!--
   private: true — this post is never published. 'make sync' expands it into
-  the _build block Hugo needs. It produces no page, no search entry, no RSS
+  the build-options block Hugo needs. It produces no page, no search entry, no RSS
   item and no tag page, and is hidden from 'make serve' too.
 
-  To publish later: delete the 'private: true' line AND the _build block,
+  To publish later: delete the 'private: true' line AND the build block,
   then set draft: false.
 
   WARNING: the GitHub repo is public, so this file is still readable at
@@ -128,7 +128,7 @@ printf '\033[32mcreated\033[0m %s/index.md\n' "$DIR"
 if [ "$PRIVATE" = 1 ]; then
   printf '  \033[33mprivate\033[0m — never published, and not shown by "make serve"\n'
   printf '  the repo is public, so the file is still readable on GitHub\n'
-  printf '  to publish later: remove "private: true" and the _build block\n'
+  printf '  to publish later: remove "private: true" and the build block\n'
 else
   printf '  preview:  make serve\n'
   printf '  publish:  set draft: false, then make publish\n'

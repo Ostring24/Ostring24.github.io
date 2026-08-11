@@ -6,6 +6,10 @@ summary: "拆解 Qwen3-Next-80B-A3B 的混合架构：Gated DeltaNet 线性注�
 draft: false
 aliases: ["/posts/model/qwen3_next_80b_a3b_deepdive/"]
 tags: ["Qwen", "MoE", "模型结构", "推理优化"]
+private: true
+build:
+  list: never
+  render: never
 ---
 
 # model 结构

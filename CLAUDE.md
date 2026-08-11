@@ -42,7 +42,7 @@ make publish
   of an existing concept fragment the tag index.
 - **Two ways to withhold a post.** `draft: true` hides it from the site but
   `make serve` still renders it. `private: true` hides it everywhere, including
-  preview; `sync_frontmatter.py` expands it into the `_build: {list: never,
+  preview; `sync_frontmatter.py` expands it into the `build: {list: never,
   render: never}` block Hugo actually understands — write the one-liner, not
   the nested YAML. Neither is real privacy: the repo is public.
 - `hasCJKLanguage = true` in hugo.toml is load-bearing — without it Hugo

@@ -240,12 +240,20 @@ def process(path: Path, apply: bool = True) -> list[str]:
 
     # -- private -------------------------------------------------------------
     # `private: true` is a one-line alias. Hugo has no such concept, so expand
-    # it into the _build block that actually suppresses the page. Unlike
+    # it into the build-options block that actually suppresses the page. Unlike
     # `draft`, this hides the post even from `hugo -D`, so `make serve` will
     # not render it either.
-    if is_private and "_build:" not in front:
-        front += "\n_build:\n  list: never\n  render: never"
-        added.append("private->_build")
+    #
+    # The key is `build`, not `_build`: the underscored form was removed in
+    # Hugo 0.145.0 and now fails the build outright.
+    if is_private and not re.search(r"^_?build\s*:", front, re.MULTILINE):
+        front += "\nbuild:\n  list: never\n  render: never"
+        added.append("private->build")
+
+    # Migrate the removed `_build` spelling in place.
+    if re.search(r"^_build\s*:", front, re.MULTILINE):
+        front = re.sub(r"^_build\s*:", "build:", front, count=1, flags=re.MULTILINE)
+        added.append("_build->build")
 
     if not added:
         return []
