@@ -59,7 +59,7 @@ tags: []
 |------|-----------|------|
 | `title` | **自动** | `make new` 填好；也可以只在正文写 `# 标题`，脚本会提上来 |
 | `date` | **自动** | 新文章用当前时间；老文章从 git 首次提交时间恢复 |
-| `lastmod` | **自动** | 最后一次提交时间 |
+| `lastmod` | **自动** | Hugo 直接从 git 历史读取，不写进文件 |
 | `summary` | **自动**（建议精修） | 自动取正文第一段。首页卡片显示的就是它，值得润色一下 |
 | `draft` | 手动 | `true` 不上线。`make serve` 能看到，线上看不到 |
 | `private` | 手动 | `true` 永不发布，连 `make serve` 都不显示。见下方 |
@@ -226,6 +226,7 @@ make install-hooks   # 启用 git hook（每个新 clone 需要跑一次）
 - 缺 `date` → 从 git 首次提交时间恢复（新文件用当天）
 - 缺 `summary` → 取正文第一个真正的段落，在句号处截断
 - 缺 `draft` → 补 `false`
+- `lastmod` **不写进文件**：它来自「下一次提交」，写文章时根本不存在，Hugo 从 git 历史读
 - 正文 H1 和 title 重复 → 删掉正文那个
 
 它**不会**自动生成 `tags`——自动打标签会产生大量近义词，反而毁掉标签体系。
@@ -257,7 +258,7 @@ Hugo 0.145 起改名为 `build`。跑 `make sync` 会自动把 `_build:` 改成 
 
 **部署没反应**
 1. 看 [Actions](https://github.com/Ostring24/Ostring24.github.io/actions)
-2. 构建前会跑 `make check`，缺 front matter 会直接失败——本地先跑 `make check`
+2. 构建前会跑 `make check`。只有缺 `title` 或 `date` 才会让部署失败——本地先跑 `make check`
 3. 只有推到 `main` 分支才会部署
 
 **commit 被 hook 卡住**

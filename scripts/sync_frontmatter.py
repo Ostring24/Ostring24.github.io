@@ -16,7 +16,9 @@ Fields it can infer:
               The heading is then removed from the body, so the page does not
               render its title twice.
   date        first commit that added the file; today for uncommitted files.
-  lastmod     most recent commit touching the file (only if already tracked).
+              (lastmod is NOT written: it comes from the commit that has not
+              happened yet at authoring time. Hugo reads it from git via
+              enableGitInfo instead.)
   summary     first real prose paragraph, truncated on a sentence boundary.
   draft       false.
 
@@ -46,6 +48,10 @@ FRONT_MATTER_RE = re.compile(r"\A---\s*\n(.*?)\n---[ \t]*\n?", re.DOTALL)
 H1_RE = re.compile(r"^#[ \t]+(.+?)[ \t]*#*[ \t]*$", re.MULTILINE)
 
 SUMMARY_MAX = 90
+
+# Fields a post genuinely cannot publish without. Only these fail `--check`,
+# so a deploy is never blocked over a missing summary.
+REQUIRED = {"title", "date"}
 
 
 # --------------------------------------------------------------- text helpers
@@ -213,11 +219,11 @@ def process(path: Path, apply: bool = True) -> list[str]:
         front = set_field(front, "date", f"date: {d}")
         added.append("date")
 
-    if not has_key(front, "lastmod"):
-        d = git_date(path, first=False)
-        if d:
-            front = set_field(front, "lastmod", f"lastmod: {d}")
-            added.append("lastmod")
+    # `lastmod` is deliberately NOT written here. It comes from git history, so
+    # it cannot exist at authoring time -- the commit that would supply it has
+    # not happened yet. Writing it on the next sync meant every freshly pushed
+    # post failed the CI gate for a field it was impossible to have. Hugo reads
+    # it straight from git instead (enableGitInfo in hugo.toml).
 
     is_private = re.search(r"^private\s*:\s*true\s*$", front, re.MULTILINE) is not None
 
@@ -292,16 +298,29 @@ def main() -> int:
         return 2
 
     touched = 0
+    blocking = 0
     for path in iter_posts(args):
         added = process(path, apply=not check_only)
         if added:
             touched += 1
-            print(f"  {path}: +{', '.join(added)}")
+            missing_required = sorted(set(added) & REQUIRED)
+            flag = "  <-- blocks deploy" if missing_required else ""
+            print(f"  {path}: +{', '.join(added)}{flag}")
+            if missing_required:
+                blocking += 1
 
     if check_only:
-        if touched:
-            print(f"\n{touched} file(s) need front matter. Run: make sync")
+        # Only a missing title or date is fatal. Everything else is a nicety
+        # that `make sync` fills in, and failing a deploy over a missing
+        # summary would block publishing for no reader-visible reason.
+        if blocking:
+            print(f"\n{blocking} file(s) missing required front matter "
+                  f"({', '.join(sorted(REQUIRED))}). Run: make sync")
             return 1
+        if touched:
+            print(f"\n{touched} file(s) could be improved by 'make sync', "
+                  "but nothing required is missing.")
+            return 0
         print("front matter is complete")
         return 0
 

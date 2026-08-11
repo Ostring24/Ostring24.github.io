@@ -10,7 +10,10 @@ hasCJKLanguage = true
 
 enableEmoji    = true
 enableRobotsTXT = true
-enableGitInfo  = false
+# lastmod comes from git history, not front matter. Writing it into the file
+# was impossible to get right: the value comes from the commit that has not
+# happened yet at authoring time. Requires full history (fetch-depth: 0 in CI).
+enableGitInfo  = true
 buildDrafts    = false
 buildFuture    = false
 buildExpired   = false
