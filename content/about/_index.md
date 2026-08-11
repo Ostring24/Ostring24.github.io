@@ -4,6 +4,9 @@ description: "关于 OString 和这个站点。"
 hidemeta: true
 ShowToc: false
 ShowBreadCrumbs: false
+date: 2026-08-11T15:51:44+08:00
+lastmod: 2026-08-11T15:51:44+08:00
+draft: false
 ---
 
 ## 关于这个站点
@@ -25,5 +28,3 @@ ShowBreadCrumbs: false
 - GitHub：[@Ostring24](https://github.com/Ostring24)
 
 ---
-
-> 这一页的内容建议按你自己的情况改写——目前是根据站内文章主题生成的初稿。
