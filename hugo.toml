@@ -119,9 +119,11 @@ Mostly written in Chinese. Start with [Infrastructure](/posts/infra/) or browse 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+# Only tags. A "categories" taxonomy would map 1:1 onto the four sections,
+# duplicating them — and a category term sharing a section's name makes
+# site.GetPage ambiguous, which breaks the theme's menu rendering.
 [taxonomies]
-  category = "categories"
-  tag      = "tags"
+  tag = "tags"
 
 # ---------------------------------------------------------------- markup
 [markup]

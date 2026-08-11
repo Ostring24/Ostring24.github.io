@@ -18,11 +18,14 @@ Fields it can infer:
   date        first commit that added the file; today for uncommitted files.
   lastmod     most recent commit touching the file (only if already tracked).
   summary     first real prose paragraph, truncated on a sentence boundary.
-  categories  derived from the section directory under content/posts/.
   draft       false.
 
 `tags` is deliberately never inferred. Auto-tagging produces near-duplicate
 vocabulary that quietly wrecks the tag index; two or three by hand is better.
+
+There is no `categories` field: the section directory under content/posts/
+already expresses that grouping, and a category term sharing a section's name
+makes site.GetPage ambiguous, which breaks the theme's menu.
 
 Usage:
     python3 scripts/sync_frontmatter.py [paths...]   # default: content/posts
@@ -38,14 +41,6 @@ from pathlib import Path
 
 CONTENT_ROOT = Path("content/posts")
 TZ = timezone(timedelta(hours=8))
-
-# Section directory -> display category. Keep in sync with the nav in hugo.toml.
-SECTION_CATEGORY = {
-    "infra": "Infrastructure",
-    "tech": "Tech Watch",
-    "research": "Research",
-    "solutions": "Solutions",
-}
 
 FRONT_MATTER_RE = re.compile(r"\A---\s*\n(.*?)\n---[ \t]*\n?", re.DOTALL)
 H1_RE = re.compile(r"^#[ \t]+(.+?)[ \t]*#*[ \t]*$", re.MULTILINE)
@@ -150,14 +145,6 @@ def has_key(front: str, key: str) -> bool:
     return re.search(rf"^{key}\s*:", front, re.MULTILINE) is not None
 
 
-def section_of(path: Path) -> str | None:
-    try:
-        rel = path.relative_to(CONTENT_ROOT)
-    except ValueError:
-        return None
-    return rel.parts[0] if len(rel.parts) > 1 else None
-
-
 def process(path: Path, apply: bool = True) -> list[str]:
     """Return the list of fields that were (or would be) added."""
     original = path.read_text(encoding="utf-8")
@@ -198,13 +185,6 @@ def process(path: Path, apply: bool = True) -> list[str]:
         if d:
             front += f"\nlastmod: {d}"
             added.append("lastmod")
-
-    # -- categories ----------------------------------------------------------
-    if not has_key(front, "categories"):
-        cat = SECTION_CATEGORY.get(section_of(path) or "")
-        if cat:
-            front += f"\ncategories: [{yaml_quote(cat)}]"
-            added.append("categories")
 
     # -- summary -------------------------------------------------------------
     if not has_key(front, "summary") and not has_key(front, "description"):
