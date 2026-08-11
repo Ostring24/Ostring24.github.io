@@ -1,7 +1,7 @@
 ---
 title: "存储的拉扯"
 date: 2026-08-11T17:13:39+08:00
-draft: true
+draft: false
 summary: "模型越来越大，kimi K3奔向了3T，静态权重就眼看要撑爆市面上GPU 显存，KV cache 还需要KDA各种linear attention 外挂做抑制，理论上存储需求是最确…"
 tags: [memory]
 ---
